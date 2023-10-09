@@ -11,12 +11,9 @@ export default defineNuxtConfig({
   app: {
     buildAssetsDir: '/_nuxt/',
     head: {
-      htmlAttrs: {
-        lang: 'ru'
-      },
       title: pkg.name,
       link: [
-        { rel: 'icon', type: 'image/png', href: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==' }
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
       ],
       meta: [
         { key: 'description', name: 'description', content: pkg.description },
@@ -45,7 +42,17 @@ export default defineNuxtConfig({
   i18n: {
     vueI18n:'./i18n.config.js',
     strategy: 'prefix_except_default',
-    locales: ['en', 'ru'],
+    baseUrl: 'http://localhost:3000/' || process.env.BASE_URL,
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US'
+      },
+      {
+        code: 'ru',
+        iso: 'ru-RU'
+      }
+    ],
     defaultLocale: 'en',
     detectBrowserLanguage: false
   },
