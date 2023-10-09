@@ -1,5 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import pkg from './package.json'
 
 export default defineNuxtConfig({
   runtimeConfig: {
@@ -11,12 +10,10 @@ export default defineNuxtConfig({
   app: {
     buildAssetsDir: '/_nuxt/',
     head: {
-      title: pkg.name,
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon.png' }
       ],
       meta: [
-        { key: 'description', name: 'description', content: pkg.description },
         { name: 'robots', content: 'index, follow' },
         { name: 'theme-color', media:'(prefers-color-scheme: light)', content: 'white' },
         { name: 'theme-color', media:'(prefers-color-scheme: dark)', content: 'black' }
@@ -24,7 +21,7 @@ export default defineNuxtConfig({
     }
   },
   devServer: {
-    port: 8001
+    port: 8002
   },
   // https://nuxt.com/docs/getting-started/deployment
   ssr: true,
