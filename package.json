@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.3.0",
-    "@nuxtjs/google-fonts": "^3.0.2",
     "@egoist/tailwindcss-icons": "^1.1.0",
     "@iconify-json/mdi": "^1.1.54"
   }
