@@ -6,17 +6,17 @@ export default defineNuxtConfig({
       BASE_URL: process.env.BASE_URL
     }
   },
-  devtools: { enabled: true },
+  devtools: {enabled: true},
   app: {
     buildAssetsDir: '/_nuxt/',
     head: {
       link: [
-        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+        {rel: 'icon', type: 'image/png', href: '/favicon.png'}
       ],
       meta: [
-        { name: 'robots', content: 'index, follow' },
-        { name: 'theme-color', media:'(prefers-color-scheme: light)', content: 'white' },
-        { name: 'theme-color', media:'(prefers-color-scheme: dark)', content: 'black' }
+        {name: 'robots', content: 'index, follow'},
+        {name: 'theme-color', media: '(prefers-color-scheme: light)', content: 'white'},
+        {name: 'theme-color', media: '(prefers-color-scheme: dark)', content: 'black'}
       ]
     }
   },
@@ -32,12 +32,16 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/color-mode',
     '@nuxtjs/i18n',
+    '@nuxtjs/google-fonts',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
     'nuxt-simple-sitemap'
   ],
+  colorMode: {
+    classSuffix: ''
+  },
   i18n: {
-    vueI18n:'./i18n.config.js',
+    vueI18n: './i18n.config.js',
     strategy: 'prefix_except_default',
     baseUrl: 'http://localhost:3000/' || process.env.BASE_URL,
     locales: [
@@ -53,14 +57,24 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
     detectBrowserLanguage: false
   },
+  googleFonts: {
+    display: 'swap',
+    families: {
+      Roboto: {
+        wght: [300, 400, 500, 700],
+        ital: [400]
+      },
+      OpenSans: {
+        wght: [300, 400, 500, 700],
+        ital: [400]
+      }
+    }
+  },
   site: {
     url: process.env.BASE_URL
   },
   nitro: {
     // https://nitro.unjs.io/config#compresspublicassets
     compressPublicAssets: true
-  },
-  colorMode: {
-    classSuffix: ''
   }
 })
