@@ -33,6 +33,7 @@
 <style lang="postcss" scoped>
   div {
     font-size: 32px;
+    line-height: 40px;
   }
   .roboto {
     font-family: 'Roboto', sans-serif;

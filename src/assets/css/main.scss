@@ -1,12 +1,23 @@
 @import 'transitions';
 @import 'icons';
 
+body {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: #838C95;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
 html.dark {
   color-scheme: dark;
 }
 
 ::selection {
-  @apply bg-accent-light-hover
+  @apply bg-accent-light
 }
 
 .dark ::selection {
@@ -15,27 +26,10 @@ html.dark {
 
 body {
   @apply bg-white dark:bg-black dark:text-white;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .container {
   @apply pt-[40px] pb-[30px] xl:pt-[80px] lg:pb-[70px]
-}
-
-.app-btn {
-  @apply py-3 px-8 text-white bg-black dark:text-black dark:bg-white rounded-full text-sm lg:text-base transition-all
-}
-
-.app-btn:hover {
-  @apply border-accent text-white bg-accent
-}
-
-.app-btn-hollow {
-  @apply py-3 px-8 border border-black dark:border-white rounded-full text-sm lg:text-base transition-all
-}
-
-.app-btn-hollow:hover {
-  @apply border-accent text-accent
 }
 
 a {
@@ -44,9 +38,5 @@ a {
 
 a:hover {
   @apply text-accent;
-}
-
-.router-link-active {
-  @apply text-accent-active;
 }
 

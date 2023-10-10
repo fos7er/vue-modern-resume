@@ -10,18 +10,19 @@ export default <Config>{
       'md': '768px',
       'lg': '1024px',
       'xl': '1280px',
-      '2xl': '1536px'
     },
     extend: {
       colors: {
-        'accent': 'rgb(248, 120, 39)',
-        'accent-hover': 'rgb(223, 111, 41)',
-        'accent-active': 'rgb(221, 106, 0)',
-        'accent-light': 'rgba(253, 106, 35, 0.09)',
-        'accent-light-hover': 'rgb(255, 218, 201)',
-        'grey-regular': 'rgb(184, 184, 184)',
-        'grey-light': 'rgb(230, 230, 230)',
-        'grey-text': '#5f5f5f'
+        'accent': '#0F9095',
+        'accent-light': '#71d5d9',
+        'grey': '#ebeeee',
+        'dark': '#000524',
+        'javascript': '#f7df1e',
+        'vue': '#42b883',
+        'react': '#61DBFB',
+        'jquery': '#0769AD',
+        'html': '#e34c26',
+        'node': '#68A063'
       }
     },
     container: {
@@ -30,20 +31,16 @@ export default <Config>{
         DEFAULT: '25px',
         'md': '2rem',
         'lg': '3rem',
-        'xl': '60px',
-        '2xl': '188px'
+        'xl': '130px'
       }
     },
     fontFamily: {
       sans: ['Roboto', 'sans-serif']
     },
     fontSize: {
-      xs: ['10px', '12px'],
-      sm: ['14px', '20px'],
-      base: ['22px', '26px'],
-      md: ['28px', '32px'],
-      lg: ['42px', '50px'],
-      xl: ['66px', '72px']
+      sm: ['15px', '30px'],
+      md: ['18px', '30px'],
+      lg: ['25px', '30px']
     }
   },
   plugins: [
