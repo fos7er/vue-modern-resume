@@ -35,7 +35,7 @@ export default <Config>{
       }
     },
     fontFamily: {
-      sans: ['Montserrat', 'sans-serif']
+      sans: ['Roboto', 'sans-serif']
     },
     fontSize: {
       xs: ['10px', '12px'],

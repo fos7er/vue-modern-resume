@@ -6,7 +6,13 @@
     <div class="font-medium" >Съешь еще этих мягких французский булок</div>
     <div class="font-bold" >Съешь еще этих мягких французский булок</div>
   </div>
-  <div class="roboto mb-6">
+  <div class="mb-6">
+    <div class="font-light" >Съешь еще этих мягких французский булок</div>
+    <div class="font-normal" >Съешь еще этих мягких французский булок</div>
+    <div class="font-medium" >Съешь еще этих мягких французский булок</div>
+    <div class="font-bold" >Съешь еще этих мягких французский булок</div>
+  </div>
+  <div class="mb-6">
     <div class="font-light" >CAsds fsdf sfds fdssdf yyy </div>
     <div class="font-normal" >CAsds fsdf sfds fdssdf yy</div>
     <div class="font-medium" >CAsds fsdf sfds fdssdf yy</div>
