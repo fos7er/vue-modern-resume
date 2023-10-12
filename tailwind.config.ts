@@ -46,7 +46,7 @@ export default <Config>{
   plugins: [
     iconsPlugin({
       // Select the icon collections you want to use
-      collections: getIconCollections(['mdi'])
+      collections: getIconCollections(['mdi', 'fa-brands'])
     })
   ]
 }

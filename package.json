@@ -25,8 +25,9 @@
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
-    "@nuxtjs/color-mode": "^3.3.0",
     "@egoist/tailwindcss-icons": "^1.1.0",
-    "@iconify-json/mdi": "^1.1.54"
+    "@iconify-json/fa-brands": "^1.1.5",
+    "@iconify-json/mdi": "^1.1.54",
+    "@nuxtjs/color-mode": "^3.3.0"
   }
 }
