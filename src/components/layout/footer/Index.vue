@@ -67,7 +67,7 @@
     position: absolute;
     top: -24px;
     left: 0;
-    right:0;
+    right: 0;
     margin: auto;
     width: 60px;
     height: 60px;
