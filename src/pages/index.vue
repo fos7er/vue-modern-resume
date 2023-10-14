@@ -44,6 +44,7 @@
     <span class="i-fa-brands-adobe  text-xs sm:text-base"/>
     <span class="i-fa-brands-vk text-xs sm:text-base"/>
   </div>
+  <section-portfolio/>
   <layout-footer/>
 </template>
 
