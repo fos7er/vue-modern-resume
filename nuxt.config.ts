@@ -36,7 +36,7 @@ export default defineNuxtConfig({
     '@/assets/css/main.scss'
   ],
   modules: [
-    '@nuxtjs/color-mode',
+    //'@nuxtjs/color-mode',
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',

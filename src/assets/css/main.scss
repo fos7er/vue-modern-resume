@@ -28,12 +28,10 @@ body {
   @apply bg-white dark:bg-black dark:text-white;
 }
 
-.container {
-  @apply pt-[40px] pb-[30px] xl:pt-[80px] lg:pb-[70px]
-}
-
-a {
-  @apply transition-all
+a, a:visited {
+  text-decoration: none;
+  outline: 0;
+  transition: color .3s ease-in-out;
 }
 
 a:hover {

@@ -1,5 +1,5 @@
-import { Config } from 'tailwindcss'
-import { getIconCollections, iconsPlugin } from '@egoist/tailwindcss-icons'
+import {Config} from 'tailwindcss'
+import {getIconCollections, iconsPlugin} from '@egoist/tailwindcss-icons'
 
 export default <Config>{
   content: ['./src/**/*.vue'],
@@ -9,7 +9,7 @@ export default <Config>{
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
-      'xl': '1280px',
+      'xl': '1280px'
     },
     extend: {
       colors: {
