@@ -13,6 +13,13 @@
   import Lightgallery from 'lightgallery/vue'
   import lgZoom from 'lightgallery/plugins/zoom'
 
+  defineProps({
+    imgSrc: {
+      type: String,
+      default: ''
+    }
+  })
+
   const plugins = [lgZoom]
   const gallerySettings = {
     speed: 500,
