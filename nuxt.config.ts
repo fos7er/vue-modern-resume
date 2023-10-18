@@ -39,6 +39,7 @@ export default defineNuxtConfig({
     //'@nuxtjs/color-mode',
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
+    '@nuxt/image',
     '@vueuse/nuxt',
     'nuxt-simple-sitemap'
   ],
@@ -61,6 +62,17 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'en',
     detectBrowserLanguage: false
+  },
+  image: {
+    quality: 80,
+    screens: {
+      'xs': 320,
+      'sm': 640,
+      'md': 768,
+      'lg': 1024,
+      'xl': 1280
+    },
+    dir: 'assets/img/portfolio'
   },
   site: {
     url: process.env.BASE_URL
