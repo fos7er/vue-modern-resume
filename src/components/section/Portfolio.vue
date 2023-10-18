@@ -5,7 +5,8 @@
       <div class="sm:grid grid-cols-3 lg:grid-cols-4 gap-10">
         <block-card
           v-for="item in works"
-          :imgSrc="getFile(item.img)"
+          :img-src="getFile(item.img)"
+          :nuxt-picture-src="item.img"
           :title="item.title"
           class="mb-12 sm:mb-0"
         />

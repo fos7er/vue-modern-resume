@@ -33,7 +33,9 @@ export default defineNuxtConfig({
   ssr: true,
   srcDir: 'src',
   css: [
-    '@/assets/css/main.scss'
+    '@/assets/css/main.scss',
+    'lightgallery/scss/lightgallery.scss',
+    'lightgallery/scss/lg-zoom.scss'
   ],
   modules: [
     //'@nuxtjs/color-mode',
