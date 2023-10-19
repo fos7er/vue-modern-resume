@@ -24,62 +24,62 @@
     {
       img: '01.jpg',
       title: 'Canadian Wanderlust',
-      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
+      subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     },
     {
       img: '02.jpg',
       title: 'Fury Fighting Gear',
-      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
+      subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     },
     {
       img: '03.jpg',
       title: 'Original Thai Food',
-      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
+      subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     },
     {
       img: '04.jpg',
       title: 'Resume Website',
-      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
+      subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     },
     {
       img: '05.jpg',
       title: 'Smirkspace',
-      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
+      subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     },
     {
       img: '06.jpg',
       title: 'Canadian Wanderlust',
-      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
+      subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     },
     {
       img: '01.jpg',
       title: 'Fury Fighting Gear',
-      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
+      subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     },
     {
       img: '02.jpg',
       title: 'Original Thai Food',
-      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
+      subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     },
     {
       img: '03.jpg',
       title: 'Resume Website',
-      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
+      subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     },
     {
       img: '04.jpg',
       title: 'Smirkspace',
-      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
+      subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     },
     {
       img: '05.jpg',
       title: 'Canadian Wanderlust',
-      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
+      subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     },
     {
       img: '06.jpg',
       title: 'Fury Fighting Gear',
-      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
+      subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     }
   ]
 </script>
