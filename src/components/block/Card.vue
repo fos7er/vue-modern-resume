@@ -1,7 +1,10 @@
 <template>
   <div class="card bg-white">
     <lightgallery :settings="gallerySettings">
-      <a :href="imgSrc">
+      <a
+        :href="imgSrc"
+        :data-sub-html="subHtml"
+      >
         <NuxtPicture
           class="card__img cursor-zoom-in"
           format="avif,webp"
@@ -25,6 +28,10 @@
       default: ''
     },
     nuxtPictureSrc: {
+      type: String,
+      default: ''
+    },
+    subHtml: {
       type: String,
       default: ''
     },

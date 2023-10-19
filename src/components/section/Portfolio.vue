@@ -1,12 +1,13 @@
 <template>
   <section class="bg-grey py-[90px]">
     <div class="container">
-      <h2 class="mb-12  text-center uppercase font-medium text-[#95A3A3] tracking-wider">CHECK OUT SOME OF MY WORKS.</h2>
+      <h2 class="mb-12  text-center uppercase font-medium text-[#95A3A3] tracking-wider">{{ t('worksTitle') }}</h2>
       <div class="sm:grid grid-cols-3 lg:grid-cols-4 gap-10">
         <block-card
           v-for="item in works"
           :img-src="getFile(item.img)"
           :nuxt-picture-src="item.img"
+          :sub-html="item.subHtml"
           :title="item.title"
           class="mb-12 sm:mb-0"
         />
@@ -16,57 +17,69 @@
 </template>
 
 <script setup>
-
+  const { t } = useI18n()
   const images = import.meta.glob('../../assets/img/portfolio/*.*', { eager: true })
   const getFile = (file) => images[`../../assets/img/portfolio/${file}`]?.default
   const works = [
     {
       img: '01.jpg',
-      title: 'Canadian Wanderlust'
+      title: 'Canadian Wanderlust',
+      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
     },
     {
       img: '02.jpg',
-      title: 'Fury Fighting Gear'
+      title: 'Fury Fighting Gear',
+      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
     },
     {
       img: '03.jpg',
-      title: 'Original Thai Food'
+      title: 'Original Thai Food',
+      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
     },
     {
       img: '04.jpg',
-      title: 'Resume Website'
+      title: 'Resume Website',
+      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
     },
     {
       img: '05.jpg',
-      title: 'Smirkspace'
+      title: 'Smirkspace',
+      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
     },
     {
       img: '06.jpg',
-      title: 'Canadian Wanderlust'
+      title: 'Canadian Wanderlust',
+      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
     },
     {
       img: '01.jpg',
-      title: 'Fury Fighting Gear'
+      title: 'Fury Fighting Gear',
+      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
     },
     {
       img: '02.jpg',
-      title: 'Original Thai Food'
+      title: 'Original Thai Food',
+      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
     },
     {
       img: '03.jpg',
-      title: 'Resume Website'
+      title: 'Resume Website',
+      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
     },
     {
       img: '04.jpg',
-      title: 'Smirkspace'
+      title: 'Smirkspace',
+      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
     },
     {
       img: '05.jpg',
-      title: 'Canadian Wanderlust'
+      title: 'Canadian Wanderlust',
+      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
     },
     {
       img: '06.jpg',
-      title: 'Fury Fighting Gear'
+      title: 'Fury Fighting Gear',
+      subHtml: '<h4>Photo by - <a href=\'https://example.com\' >Diego Guzmán </a></h4> <p> Location - Fushimi Ward, Kyoto, Japan</p>'
     }
   ]
 </script>
