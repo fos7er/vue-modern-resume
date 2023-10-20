@@ -9,7 +9,13 @@
     "items": [
       {
         "name": "javascript",
-        "value": 80
+        "value": 80,
+        "color": "#f7df1e"
+      },
+      {
+        "name": "vue.js",
+        "value": 80,
+        "color": "#42b883"
       }
     ]
   }

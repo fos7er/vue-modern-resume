@@ -1,13 +1,23 @@
 <template>
-  <div>
-
-  </div>
+  <li class="mb-6">
+    <div class="mb-2 uppercase font-bold tracking-[2px] text-black/70">
+      <slot/>
+    </div>
+    <div class="bg-dark w-[85%] h-[42px]">
+      <div class="h-full" :style="`background-color:${color};width:${value}%`"></div>
+    </div>
+  </li>
 </template>
 
 <script setup>
-
+  defineProps({
+    color: {
+      type: String,
+      default: '#fff'
+    },
+    value: {
+      type: String,
+      default: 100
+    }
+  })
 </script>
-
-<style lang="scss" scoped>
-
-</style>
