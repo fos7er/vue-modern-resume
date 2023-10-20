@@ -1,5 +1,4 @@
 <template>
-  <h1 class="text-center text-accent">{{ t('welcome') }}</h1>
   <div class="roboto mb-6">
     <div class="font-light" >Съешь еще этих мягких французский булок</div>
     <div class="font-normal" >Съешь еще этих мягких французский булок</div>
