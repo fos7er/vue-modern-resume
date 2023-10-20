@@ -28,6 +28,11 @@
         "color": "#68A063"
       },
       {
+        "name": "jquery",
+        "value": 60,
+        "color": "#0769AD"
+      },
+      {
         "name": "html&css",
         "value": 90,
         "color": "#e34c26"

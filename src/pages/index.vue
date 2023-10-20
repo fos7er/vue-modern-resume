@@ -44,6 +44,8 @@
     <span class="i-fa-brands-adobe  text-xs sm:text-base"/>
     <span class="i-fa-brands-vk text-xs sm:text-base"/>
   </div>
+  <section-education/>
+  <section-work/>
   <section-skills/>
   <section-portfolio/>
   <layout-footer/>
