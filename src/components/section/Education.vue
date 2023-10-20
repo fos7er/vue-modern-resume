@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <section>
+    <div class="container education">
 
-  </div>
+    </div>
+  </section>
 </template>
 
 <script setup>

@@ -2,7 +2,7 @@
 @import 'icons';
 
 body {
-  background: #fff;
+  @apply bg-white dark:bg-black dark:text-white;
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-size: 15px;
@@ -24,8 +24,10 @@ html.dark {
   background-color: #7c3b00;
 }
 
-body {
-  @apply bg-white dark:bg-black dark:text-white;
+.container {
+  &.education, &.work, &.skills {
+    @apply py-12 border-t border-gray-200
+  }
 }
 
 a, a:visited {

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container py-12 border-t border-gray-200">
+    <div class="container skills">
       <div class="md:grid grid-cols-4">
         <element-title-bordered>{{ t('skills.title') }}</element-title-bordered>
         <div class="col-span-3">
