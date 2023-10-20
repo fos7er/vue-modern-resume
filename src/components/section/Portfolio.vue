@@ -1,7 +1,7 @@
 <template>
   <section class="bg-grey py-[90px]">
     <div class="container">
-      <h2 class="mb-12  text-center uppercase font-medium text-[#95A3A3] tracking-wider">{{ t('worksTitle') }}</h2>
+      <h2 class="mb-12 text-center uppercase font-medium text-[#95A3A3] tracking-wider">{{ t('worksTitle') }}</h2>
       <div class="sm:grid grid-cols-3 lg:grid-cols-4 gap-10">
         <block-card
           v-for="item in works"

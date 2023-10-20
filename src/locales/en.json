@@ -16,6 +16,21 @@
         "name": "vue.js",
         "value": 80,
         "color": "#42b883"
+      },
+      {
+        "name": "react",
+        "value": 70,
+        "color": "#61DBFB"
+      },
+      {
+        "name": "node.js",
+        "value": 55,
+        "color": "#68A063"
+      },
+      {
+        "name": "html&css",
+        "value": 90,
+        "color": "#e34c26"
       }
     ]
   }
