@@ -2,5 +2,15 @@
   "welcome": "HELLO!",
   "title": "AK personal website",
   "description": "AK personal website",
-  "worksTitle:": "check out some of my works."
+  "worksTitle:": "check out some of my works.",
+  "skills": {
+    "title": "skills",
+    "subtitle": "Your skills description, describe what tools and technologies you know and use in your work.",
+    "items": [
+      {
+        "name": "javascript",
+        "value": 80
+      }
+    ]
+  }
 }
