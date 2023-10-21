@@ -1,7 +1,15 @@
 {
   "title": "AK personal website",
+  "about": {
+    "contactDetails": [
+      "Foster's project",
+      "(Your Street)",
+      "(Your City) (Your State), (Postal Code)",
+      "555-555-5555"
+    ]
+  },
   "description": "AK personal website",
-  "worksTitle:": "check out some of my works.",
+  "worksTitle": "check out some of my works.",
   "skills": {
     "title": "skills",
     "subtitle": "Your skills description, describe what tools and technologies you know and use in your work.",

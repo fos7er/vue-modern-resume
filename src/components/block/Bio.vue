@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-8 text-center md:text-left">
+  <div class="mb-8">
     <h3 class="mb-2 text-lg font-bold text-dark">{{ title }}</h3>
     <p class="mb-4">
       <span class="italic text-gray-500 font-roboto">{{ subtitle }}</span>
