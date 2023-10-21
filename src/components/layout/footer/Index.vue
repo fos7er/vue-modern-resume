@@ -11,8 +11,8 @@
       <ul class="copyright flex justify-center">
         <li>{{ new Date().getFullYear() }} Your name</li>
         <li>
-          <span>Design by</span>
           <span class="px-2.5">•</span>
+          <span class="mr-2">Design by</span>
           <a title="Styleshout" href="https://www.styleshout.com/" target="_blank">Styleshout</a>
         </li>
       </ul>
