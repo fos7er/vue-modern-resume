@@ -21,7 +21,3 @@
 <script setup>
   const { t, tm, rt } = useI18n()
 </script>
-
-<style lang="scss" scoped>
-
-</style>
