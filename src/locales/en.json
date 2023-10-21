@@ -1,5 +1,6 @@
 {
   "title": "AK personal website",
+  "description": "AK personal website",
   "about": {
     "contactDetails": [
       "Foster's project",
@@ -8,8 +9,40 @@
       "555-555-5555"
     ]
   },
-  "description": "AK personal website",
-  "worksTitle": "check out some of my works.",
+  "education": {
+    "title": "education",
+    "items": [
+      {
+        "name": "University?",
+        "position": "Masters in Beer tasting",
+        "period": "May 2020",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+      },
+      {
+        "name": "School #1 Maybe College?",
+        "position": "What did you study 101",
+        "period": "May 2016",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+      }
+    ]
+  },
+  "work": {
+    "title": "work",
+    "items": [
+      {
+        "companyName": "Awesome Design Studio",
+        "position": "Middle dev",
+        "period": "August 2021 - Present",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      },
+      {
+        "companyName": "Super Cool Studio",
+        "position": "Junior dev",
+        "period": "June 2020 - August 2021",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      }
+    ]
+  },
   "skills": {
     "title": "skills",
     "subtitle": "Your skills description, describe what tools and technologies you know and use in your work.",
@@ -46,38 +79,5 @@
       }
     ]
   },
-  "work": {
-    "title": "work",
-    "items": [
-      {
-        "companyName": "Awesome Design Studio",
-        "position": "Middle dev",
-        "period": "August 2021 - Present",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
-      },
-      {
-        "companyName": "Super Cool Studio",
-        "position": "Junior dev",
-        "period": "June 2020 - August 2021",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
-      }
-    ]
-  },
-  "education": {
-    "title": "education",
-    "items": [
-      {
-        "name": "University?",
-        "position": "Masters in Beer tasting",
-        "period": "May 2020",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      },
-      {
-        "name": "School #1 Maybe College?",
-        "position": "What did you study 101",
-        "period": "May 2016",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      }
-    ]
-  }
+  "portfolioTitle": "check out some of my works."
 }
