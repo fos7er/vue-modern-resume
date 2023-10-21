@@ -6,9 +6,7 @@
       <span class="px-2.5">•</span>
       <span>{{ period }}</span>
     </p>
-    <p>
-      {{ description}}
-    </p>
+    <p>{{ description }}</p>
   </div>
 </template>
 
@@ -32,7 +30,3 @@
     }
   })
 </script>
-
-<style lang="scss" scoped>
-
-</style>
