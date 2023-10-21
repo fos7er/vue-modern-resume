@@ -45,9 +45,9 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-simple-sitemap'
   ],
-  colorMode: {
-    classSuffix: ''
-  },
+  // colorMode: {
+  //   classSuffix: ''
+  // },
   i18n: {
     vueI18n: './i18n.config.js',
     strategy: 'prefix_except_default',
