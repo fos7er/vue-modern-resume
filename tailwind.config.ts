@@ -16,13 +16,7 @@ export default <Config>{
         'accent': '#0F9095',
         'accent-light': '#71d5d9',
         'grey': '#ebeeee',
-        'dark': '#000524',
-        'javascript': '#f7df1e',
-        'vue': '#42b883',
-        'react': '#61DBFB',
-        'jquery': '#0769AD',
-        'html': '#e34c26',
-        'node': '#68A063'
+        'dark': '#000524'
       }
     },
     container: {
@@ -35,7 +29,7 @@ export default <Config>{
       }
     },
     fontFamily: {
-      sans: ['Roboto', 'sans-serif']
+      roboto: ['Roboto', 'sans-serif']
     },
     fontSize: {
       sm: ['15px', '30px'],

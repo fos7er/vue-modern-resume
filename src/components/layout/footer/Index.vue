@@ -11,7 +11,8 @@
       <ul class="copyright flex justify-center">
         <li>{{ new Date().getFullYear() }} Your name</li>
         <li>
-          Design by
+          <span>Design by</span>
+          <span class="px-2.5">•</span>
           <a title="Styleshout" href="https://www.styleshout.com/" target="_blank">Styleshout</a>
         </li>
       </ul>
@@ -48,18 +49,6 @@
   footer {
     .social-links {
       -webkit-font-smoothing: antialiased;
-    }
-
-    .copyright {
-      li:before {
-        content: "\2022";
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-
-      li:first-child:before {
-        display: none;
-      }
     }
   }
 

@@ -37,5 +37,22 @@
         "color": "#e34c26"
       }
     ]
+  },
+  "work": {
+    "title": "work",
+    "items": [
+      {
+        "companyName": "Awesome Design Studio",
+        "position": "Middle dev",
+        "period": "August 2021 - Present",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      },
+      {
+        "companyName": "Super Cool Studio",
+        "position": "Junior dev",
+        "period": "June 2020 - August 2021",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      }
+    ]
   }
 }

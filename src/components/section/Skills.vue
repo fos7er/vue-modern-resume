@@ -8,6 +8,7 @@
           <ul class="skills">
             <element-skill
               v-for="item in tm('skills.items')"
+              :key="rt(item.name)"
               :value="rt(item.value)"
               :color="rt(item.color)"
             >
