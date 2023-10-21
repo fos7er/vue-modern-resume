@@ -2,6 +2,7 @@
   <div>
     <NuxtLoadingIndicator color="#000" :duration="1000"/>
     <slot/>
+    <layout-footer/>
   </div>
 </template>
 
