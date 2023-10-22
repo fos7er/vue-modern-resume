@@ -3,7 +3,7 @@
     <div class="container about pt-24 pb-16">
       <div class="md:grid grid-cols-4 items-start">
         <div class="photo flex justify-center md:justify-start">
-          <img class="mb-6 rounded-full w-[114px]" src="@/assets/img/myPhoto.jpeg" alt="myPhoto">
+          <img class="mb-6 rounded-full w-[180px]" src="@/assets/img/myPhoto.jpeg" alt="myPhoto">
         </div>
         <div class="col-span-3">
           <h3 class="mb-3 text-lg text-white font-bold">About Me</h3>
