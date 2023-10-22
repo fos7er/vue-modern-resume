@@ -30,8 +30,6 @@
     "@iconify-json/mdi": "^1.1.54",
     "@nuxt/image": "^1.0.0-rc.3",
     "@nuxtjs/color-mode": "^3.3.0",
-    "@tresjs/cientos": "^3.5.1",
-    "@tresjs/nuxt": "^1.2.2",
     "lightgallery": "^2.7.2"
   }
 }
