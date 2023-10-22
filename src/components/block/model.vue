@@ -2,7 +2,7 @@
   import { BasicShadowMap, NoToneMapping, SRGBColorSpace } from 'three'
 
   const gl = {
-    clearColor: '#82DBC5',
+    clearColor: '#ebeeee',
     shadows: true,
     alpha: false,
     shadowMapType: BasicShadowMap,
@@ -20,13 +20,12 @@
 <template>
   <TresCanvas
     v-bind="gl"
-    clear-color="#000"
   >
     <TresPerspectiveCamera
-      :position="[5, 5, 5]"
-      :fov="90"
+      :position="[5, 5, 70]"
+      :fov="75"
       :near="1"
-      :zoom="1"
+      :zoom="4"
       :far="10000000"
     />
     <OrbitControls />
