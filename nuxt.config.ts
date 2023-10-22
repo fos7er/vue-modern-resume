@@ -43,7 +43,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
     '@vueuse/nuxt',
-    'nuxt-simple-sitemap'
+    'nuxt-simple-sitemap',
+    '@tresjs/nuxt'
   ],
   // colorMode: {
   //   classSuffix: ''
