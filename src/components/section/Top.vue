@@ -1,21 +1,22 @@
 <template>
   <section>
     <div class="top relative">
-      <div id="tsparticles">
-      </div>
+      <div id="tsparticles"/>
     </div>
-    <div class="bottom">
-    </div>
+    <div class="bottom"/>
   </section>
 </template>
 
 <script setup>
   useHead({
-    script: [{ src: 'https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js' }]
+    script: [{ src: 'https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js' }]
   })
 
   const options = {
     fps_limit: 60,
+    fullScreen: {
+      enable: false
+    },
     interactivity: {
       detect_on: 'window',
       events: {
@@ -43,10 +44,10 @@
         enable: true,
         out_mode: 'out',
         random: false,
-        speed: 2,
+        speed: 0.8,
         straight: false
       },
-      number: { density: { enable: true, value_area: 1300 }, value: 80 },
+      number: { density: { enable: true, value_area: 1300 }, value: 90 },
       opacity: {
         anim: { enable: false, opacity_min: 0.1, speed: 1, sync: false },
         random: false,
@@ -62,15 +63,11 @@
 
   onMounted(() => {
     tsParticles.load('tsparticles', options)
-
   })
 
 </script>
 
 <style lang="scss" scoped>
-  .hero-body {
-    position: relative;
-  }
 
   #tsparticles {
     position: absolute;
