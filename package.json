@@ -31,6 +31,7 @@
     "@nuxt/image": "^1.0.0-rc.3",
     "@nuxtjs/color-mode": "^3.3.0",
     "lightgallery": "^2.7.2",
-    "particles.js": "^2.0.0"
+    "tsparticles": "^2.12.0",
+    "tsparticles-engine": "^2.12.0"
   }
 }

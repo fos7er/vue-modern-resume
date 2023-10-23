@@ -1,6 +1,10 @@
 @import 'transitions';
 @import 'icons';
 
+html.dark {
+  color-scheme: dark;
+}
+
 body {
   background: #fff;
   font-family: 'Open Sans', sans-serif;
@@ -12,16 +16,17 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-html.dark {
-  color-scheme: dark;
-}
-
 ::selection {
   @apply bg-accent-light
 }
 
 .dark ::selection {
   background-color: #7c3b00;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
 }
 
 .container {

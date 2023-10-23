@@ -1,8 +1,5 @@
 <template>
-  <client-only>
-    <section-top/>
-  </client-only>
-
+  <section-top/>
   <section-about/>
   <section-education/>
   <section-work/>
