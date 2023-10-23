@@ -1,14 +1,13 @@
 <template>
-  <div class="w-[900px] h-[500px]">
-    <block-model></block-model>
-  </div>
+  <client-only>
+    <section-top/>
+  </client-only>
+
   <section-about/>
   <section-education/>
   <section-work/>
   <section-skills/>
   <section-portfolio/>
 </template>
-
-<script setup>
-
+<script setup lang="ts">
 </script>
