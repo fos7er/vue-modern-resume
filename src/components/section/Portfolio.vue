@@ -4,7 +4,7 @@
       <h2 class="mb-12 text-center uppercase font-medium text-[#95A3A3] tracking-wider">
         {{ t('portfolioTitle') }}
       </h2>
-      <div class="sm:grid grid-cols-3 lg:grid-cols-4 gap-10">
+      <div class="sm:grid grid-cols-3 gap-10">
         <block-card
           v-for="item in works"
           :key="item.id"
@@ -76,24 +76,6 @@
       id: 9,
       img: '03.jpg',
       title: 'Resume Website',
-      subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
-    },
-    {
-      id: 10,
-      img: '04.jpg',
-      title: 'Smirkspace',
-      subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
-    },
-    {
-      id: 11,
-      img: '05.jpg',
-      title: 'Canadian Wanderlust',
-      subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
-    },
-    {
-      id: 12,
-      img: '06.jpg',
-      title: 'Fury Fighting Gear',
       subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     }
   ]

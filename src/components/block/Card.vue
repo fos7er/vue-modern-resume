@@ -10,7 +10,7 @@
           format="avif,webp"
           :src="nuxtPictureSrc"
           :alt="title"
-          sizes="100vw sm:225px"
+          sizes="100vw sm:350px"
         />
       </a>
     </lightgallery>
