@@ -1,9 +1,8 @@
 <template>
   <section>
-    <div class="top relative">
+    <div class="bg relative">
       <div id="tsparticles"/>
     </div>
-    <div class="bottom"/>
   </section>
 </template>
 
@@ -74,19 +73,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 70%;
   }
 
-  .top {
-    height: 58.11vh;
-    background: url('@/assets/img/desert1.webp') no-repeat bottom;
-    background-size: cover;
+  .bg {
+    height: 100vh;
+    background: url('@/assets/img/desert.webp') no-repeat top;
+    background-size: 100% auto;
     z-index: 1;
-  }
-
-  .bottom {
-    height: 41.89vh;
-    background: url('@/assets/img/desert2.webp') no-repeat top;
-    background-size: cover;
   }
 </style>

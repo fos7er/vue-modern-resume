@@ -38,16 +38,12 @@ export default defineNuxtConfig({
     'lightgallery/scss/lg-zoom.scss'
   ],
   modules: [
-    //'@nuxtjs/color-mode',
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
     '@vueuse/nuxt',
     'nuxt-simple-sitemap'
   ],
-  // colorMode: {
-  //   classSuffix: ''
-  // },
   i18n: {
     vueI18n: './i18n.config.js',
     strategy: 'prefix_except_default',
