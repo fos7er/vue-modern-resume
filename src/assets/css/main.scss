@@ -1,6 +1,10 @@
 @import 'transitions';
 @import 'icons';
 
+:root {
+  --resolution: calc(1vw + 1vh)
+}
+
 html {
   color-scheme: dark;
 }

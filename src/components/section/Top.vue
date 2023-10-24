@@ -1,7 +1,12 @@
 <template>
   <section>
-    <div class="bg relative">
+    <div class="bg">
       <div id="tsparticles"/>
+      <h1 class="bg__title">My name is Jonathan Black.</h1>
+      <h2 class="bg__subtitle">
+        I am a web developer and I use react and vue.js to develop pages. This project is
+        a template that can be used as the home page or resume page.
+      </h2>
     </div>
   </section>
 </template>
@@ -73,13 +78,51 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 70%;
+    height: 60%;
   }
 
   .bg {
+    position: relative;
+    display: flex;
     height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: bold;
     background: url('@/assets/img/desert.webp') no-repeat top;
-    background-size: 100% auto;
+    background-size: cover;
     z-index: 1;
+
+    &__title {
+      margin-bottom: 0.7rem;
+      font-size: calc(var(--resolution) * 2.3);
+      line-height: calc(var(--resolution) * 2.3);
+      text-shadow: 0 0 15px #9f4a33;
+    }
+
+    &__subtitle {
+      max-width: 900px;
+      padding-bottom: 0.5rem;
+      line-height: 1.5rem;
+      border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    #tsparticles {
+      height: 70%;
+    }
+    .bg {
+      padding: 50px 60px;
+
+      &__subtitle {
+        font-size: calc(var(--resolution) * 0.8);
+        line-height: calc(var(--resolution) * 1.5);
+      }
+    }
   }
 </style>
