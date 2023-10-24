@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="bg">
-      <div id="tsparticles"/>
+      <div id="particles"/>
       <h1 class="bg__title">My name is Jonathan Black.</h1>
       <h2 class="bg__subtitle">
         I am a web developer and I use react and vue.js to develop pages. This project is
@@ -66,14 +66,14 @@
   }
 
   onMounted(() => {
-    tsParticles.load('tsparticles', options)
+    tsParticles.load('particles', options)
   })
 
 </script>
 
 <style lang="scss" scoped>
 
-  #tsparticles {
+  #particles {
     position: absolute;
     top: 0;
     left: 0;
@@ -113,7 +113,7 @@
   }
 
   @media screen and (min-width: 1024px) {
-    #tsparticles {
+    #particles {
       height: 70%;
     }
     .bg {
