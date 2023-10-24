@@ -33,9 +33,9 @@
       }
     },
     particles: {
-      color: { value: '#ffffff' },
+      color: { value: '#fff' },
       line_linked: {
-        color: '#ffffff',
+        color: '#fff',
         distance: 150,
         enable: true,
         opacity: 0.4,
