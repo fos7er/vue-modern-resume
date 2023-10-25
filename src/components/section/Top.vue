@@ -22,7 +22,7 @@
       enable: false
     },
     interactivity: {
-      detect_on: 'window',
+      detect_on: 'canvas',
       events: {
         onclick: { enable: true, mode: 'push' },
         resize: true
@@ -93,11 +93,12 @@
     text-align: center;
     font-family: 'Roboto', 'sans-serif';
     font-weight: bold;
-    background: url('@/assets/img/desert.webp') no-repeat top;
+    background:#000 url('@/assets/img/desert.webp') no-repeat top;
     background-size: cover;
     z-index: 1;
 
     &__title {
+      margin-top: -50px;
       margin-bottom: 0.7rem;
       font-size: calc(var(--resolution) * 2.3);
       line-height: calc(var(--resolution) * 2.3);
@@ -117,7 +118,12 @@
       height: 70%;
     }
     .bg {
+      margin-top: 0;
       padding: 50px 60px;
+
+      &__title {
+        margin-top: 0;
+      }
 
       &__subtitle {
         font-size: calc(var(--resolution) * 0.8);
