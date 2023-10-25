@@ -2,11 +2,16 @@
   <section>
     <div class="bg">
       <div id="particles"/>
-      <h1 class="bg__title">My name is Jonathan Black.</h1>
-      <h2 class="bg__subtitle">
-        I am a web developer and I use react and vue.js to develop pages. This project is
-        a template that can be used as the home page or resume page.
-      </h2>
+      <div class="bg__text-wrapper">
+        <h1 class="bg__title">My name is Jonathan Black.</h1>
+        <h2 class="bg__subtitle">
+          I am a web developer and I use react and vue.js to develop pages. This project is
+          a template that can be used as the home page or resume page.
+        </h2>
+      </div>
+      <element-button-go-to class="go-to-top" target="#about">
+        <span class="i-mdi-chevron-down text-[50px] hover:text-accent"/>
+      </element-button-go-to>
     </div>
   </section>
 </template>
@@ -97,6 +102,10 @@
     background-size: cover;
     z-index: 1;
 
+    &__text-wrapper {
+      max-width: 900px;
+    }
+
     &__title {
       margin-top: -50px;
       margin-bottom: 0.7rem;
@@ -106,10 +115,22 @@
     }
 
     &__subtitle {
-      max-width: 900px;
       padding-bottom: 0.5rem;
       line-height: 1.5rem;
       border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+    }
+
+    .go-to-top {
+      position: absolute;
+      bottom: 24px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 60px;
+      height: 60px;
+      background-color: #525252;
+      transition: all 0.2s ease-in-out;
+      border-radius: 100%;
     }
   }
 
