@@ -10,7 +10,7 @@
         </h2>
       </div>
       <element-button-go-to class="go-to-top" target="#about">
-        <span class="i-mdi-chevron-down text-[50px] hover:text-accent"/>
+        <span class="i-mdi-chevron-down"/>
       </element-button-go-to>
     </div>
   </section>
@@ -128,6 +128,7 @@
       margin: auto;
       width: 60px;
       height: 60px;
+      font-size: 50px;
       background-color: #525252;
       transition: all 0.2s ease-in-out;
       border-radius: 100%;

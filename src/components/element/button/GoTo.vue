@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper inline-flex justify-center items-center cursor-pointer" @click="scroll">
+  <div class="wrapper inline-flex justify-center items-center cursor-pointer hover:text-accent" @click="scroll">
     <slot/>
   </div>
 </template>
