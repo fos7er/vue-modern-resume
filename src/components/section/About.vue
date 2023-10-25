@@ -21,10 +21,14 @@
               </div>
             </div>
             <div>
-              <div class="inline-flex items-center px-5 py-3 bg-[#444] text-white font-bold cursor-pointer hover:bg-white hover:text-black transition-all">
-                <span class="i-mdi-download mr-2"></span>
+              <a
+                :href="resume"
+                class="inline-flex items-center px-5 py-3 bg-[#444] text-white font-bold cursor-pointer hover:bg-white hover:text-black transition-ease-in-out"
+                target="_blank"
+              >
+                <span class="i-mdi-download mr-2"/>
                 <span>Download Resume</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -35,5 +39,7 @@
 
 <script setup>
   import { email} from '@/assets/constants'
+  import resume from '@/assets/docs/resume.pdf'
+
   const { t, tm } = useI18n()
 </script>

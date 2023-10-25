@@ -62,19 +62,19 @@
     },
     {
       id: 7,
-      img: '01.jpg',
+      img: '02.jpg',
       title: 'Fury Fighting Gear',
       subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     },
     {
       id: 8,
-      img: '02.jpg',
+      img: '01.jpg',
       title: 'Original Thai Food',
       subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     },
     {
       id: 9,
-      img: '03.jpg',
+      img: '05.jpg',
       title: 'Resume Website',
       subHtml: '<h4> Source on - <a href=\'https://github.com\' > GitHub </a></h4> <p> My awesome  work example</p>'
     }
