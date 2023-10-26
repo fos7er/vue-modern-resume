@@ -1,11 +1,11 @@
 <template>
   <header ref="header" class="app-header">
-    <nav class="h-12" role="navigation">
-      <div class="menu">
+    <nav role="navigation">
+      <div class="menu h-12">
         <div class="logo">
-<!--          <NuxtLink class="block" :to="localePath('/')">-->
-<!--            <layout-header-logo/>-->
-<!--          </NuxtLink>-->
+          <NuxtLink class="block" :to="{ path:localePath('/'), hash: '#home' }">
+            <layout-header-logo/>
+          </NuxtLink>
         </div>
         <div class="links hidden md:block" :key="route.path">
           <ul class="flex whitespace-nowrap">
@@ -17,7 +17,7 @@
             >
               <NuxtLink
                 v-if="item.path"
-                :to="{path:localePath(item.path), hash: item.hash}"
+                :to="{ path:localePath(item.path), hash: item.hash }"
                 class="block main-link__text"
                 :class="{'text-accent-active': item.active}"
               >

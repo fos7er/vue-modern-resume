@@ -25,7 +25,7 @@
     }
 
     //header height
-    const yOffset = -40
+    const yOffset = -48
     const y = document.querySelector(props.target).getBoundingClientRect().top + window.scrollY + yOffset
     window.scrollTo({ top: y, behavior: props.behavior })
   }
