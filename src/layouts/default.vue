@@ -1,6 +1,8 @@
 <template>
   <div>
-    <NuxtLoadingIndicator color="#000" :duration="1000"/>
+    <NuxtLoadingIndicator color="#dd6a00" :duration="1000"/>
+    <layout-header/>
+    <div class="h-screen"></div>
     <slot/>
     <layout-footer/>
   </div>
