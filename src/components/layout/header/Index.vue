@@ -118,7 +118,7 @@
   }
 
   .app-header .menu {
-    @apply flex justify-between items-center px-4 xl:px-10 border-b border-black
+    @apply flex justify-between items-center px-4 xl:px-10 border-b border-header
   }
 
   .app-header .logo > * {

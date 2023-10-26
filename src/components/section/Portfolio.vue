@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-grey py-[90px]">
+  <section  id="portfolio" class="bg-grey py-[90px]">
     <div class="container">
       <h2 class="mb-12 text-center uppercase font-medium text-[#95A3A3] tracking-wider">
         {{ t('portfolioTitle') }}

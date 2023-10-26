@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="work">
     <div class="container work">
       <div class="md:grid grid-cols-4">
         <element-title-bordered>{{ t('work.title') }}</element-title-bordered>
