@@ -17,7 +17,8 @@ export default <Config>{
         'accent': '#0F9095',
         'accent-light': '#71d5d9',
         'grey': '#ebeeee',
-        'dark': '#000524'
+        'dark': '#000524',
+        'header': '#1d191a'
       }
     },
     container: {

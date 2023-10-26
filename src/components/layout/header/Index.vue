@@ -58,7 +58,7 @@
           />
         </div>
       </div>
-      <div class="px-4 bg-white">
+      <div class="bg-header">
         <layout-header-mobile-menu v-show="showMenu" :items="menu" @toggle="toggleMenu">
           <div class="actions flex justify-between items-center py-4 font-medium">
           </div>
@@ -114,7 +114,7 @@
 
 <style lang="postcss" scoped>
   .app-header {
-    @apply fixed w-full bg-[#1d191a] text-white font-roboto select-none z-10 tracking-[2.5px]
+    @apply fixed w-full bg-header text-white font-roboto select-none z-10 tracking-[2.5px]
   }
 
   .app-header .menu {
