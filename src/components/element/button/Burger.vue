@@ -1,8 +1,8 @@
 <template>
   <div :class="fold ? 'burger_fold' : ''" class="burger cursor-pointer" @click="$emit('burger-click')">
-    <div class="bar1 bg-black dark:bg-white"></div>
-    <div class="bar2 bg-black dark:bg-white"></div>
-    <div class="bar3 bg-black dark:bg-white"></div>
+    <div class="bar1 bg-primary"></div>
+    <div class="bar2 bg-primary"></div>
+    <div class="bar3 bg-primary"></div>
   </div>
 </template>
 

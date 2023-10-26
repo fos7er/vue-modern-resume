@@ -13,6 +13,7 @@ export default <Config>{
     },
     extend: {
       colors: {
+        'primary':'#F06000',
         'accent': '#0F9095',
         'accent-light': '#71d5d9',
         'grey': '#ebeeee',

@@ -1,21 +1,21 @@
 <template>
   <header ref="header" class="app-header">
-    <nav class="h-16" role="navigation">
+    <nav class="h-12" role="navigation">
       <div class="menu">
-        <div class="logo block lg:block">
-          <NuxtLink no-prefetch :to="localePath('/')">
-            <layout-header-logo/>
-          </NuxtLink>
+        <div class="logo">
+<!--          <NuxtLink class="block" :to="localePath('/')">-->
+<!--            <layout-header-logo/>-->
+<!--          </NuxtLink>-->
         </div>
-        <div class="links hidden font-semibold 2xl:block" :key="route.path">
+        <div class="links hidden md:block" :key="route.path">
           <ul class="flex whitespace-nowrap">
-            <li v-for="item in menu"
-                :key="item.id"
-                class="main-link px-1.5 py-2 relative "
-                tabindex="0"
+            <li
+              v-for="item in menu"
+              :key="item.id"
+              class="main-link"
+              tabindex="0"
             >
               <NuxtLink
-                no-prefetch
                 v-if="item.path"
                 :to="{path:localePath(item.path), hash: item.hash}"
                 class="block main-link__text"
@@ -27,36 +27,30 @@
                 {{ t(item.text) }}
               </div>
               <div class="main-link__dropdown">
-                <ul v-if="item.group" class="bg-white pt-6 px-6 dark:bg-black">
+                <ul v-if="item.group" class="bg-white pt-6 px-6">
                   <li v-for="link in item.group"
                       :key="link.id"
                       :class="{'sub-group':link.group}"
                       class="pb-8"
                   >
-                    <NuxtLink no-prefetch v-if="link.path" :to="localePath(link.path)" class="block">
+                    <NuxtLink v-if="link.path" :to="localePath(link.path)" class="block">
                       {{ t(link.text) }}
                     </NuxtLink>
                     <span v-else>{{ t(link.text) }}</span>
-                    <ul v-if="link.group" class="sub-group relative text-sm pl-4 pt-2">
-                      <li v-for="miniLink in link.group" :key="miniLink.id"
-                          class="sub-group__link py-2"
-                      >
-                        <NuxtLink no-prefetch :to="localePath(miniLink.path)" class="block">
-                          {{ t(miniLink.text) }}
-                        </NuxtLink>
-                      </li>
-                    </ul>
                   </li>
                 </ul>
               </div>
             </li>
           </ul>
         </div>
-        <div class="actions hidden 2xl:flex items-center">
+        <div class="actions ml-auto mr-8 md:mr-0 md:ml-0 flex items-center">
           <div>
+            <select name="sdf" id="sdf">
+              <option value="en">EN</option>
+            </select>
           </div>
         </div>
-        <div class="burger ml-auto inline-block 2xl:hidden">
+        <div class="burger inline-block md:hidden">
           <burger
             ref="burger"
             :fold="showMenu"
@@ -64,7 +58,7 @@
           />
         </div>
       </div>
-      <div class="px-4 bg-white dark:bg-black">
+      <div class="px-4 bg-white">
         <layout-header-mobile-menu v-show="showMenu" :items="menu" @toggle="toggleMenu">
           <div class="actions flex justify-between items-center py-4 font-medium">
           </div>
@@ -120,15 +114,15 @@
 
 <style lang="postcss" scoped>
   .app-header {
-    @apply absolute w-full bg-transparent select-none z-10
+    @apply fixed w-full bg-[#1d191a] text-white font-roboto select-none z-10 tracking-[2.5px]
   }
 
   .app-header .menu {
-    @apply flex justify-between items-center px-4 xl:px-10 border-b border-black dark:border-white
+    @apply flex justify-between items-center px-4 xl:px-10 border-b border-black
   }
 
   .app-header .logo > * {
-    @apply h-16
+    @apply h-12
   }
 
   /* Disabling hover, if header has opened element */
@@ -142,6 +136,10 @@
   }
 
   .main-link {
+    position: relative;
+    padding: 0 13px;
+    line-height: 2rem;
+    text-transform: uppercase;
 
     &__dropdown {
       display: none;
@@ -154,16 +152,6 @@
       & > li:last-child {
         padding-bottom: 0;
       }
-
-      & ul.sub-group:after {
-        content: '';
-        position: absolute;
-        top: 14%;
-        left: 4px;
-        width: 1px;
-        height: 78%;
-        background-color: theme('colors.grey');
-      }
     }
 
     &:hover &__dropdown {
@@ -171,7 +159,7 @@
     }
 
     &:focus-within > &__text, &:hover > &__text {
-      color: theme('colors.accent')
+      color: theme('colors.primary')
     }
   }
 </style>
