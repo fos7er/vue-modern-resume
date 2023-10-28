@@ -1,5 +1,5 @@
 <template>
-  <section id="home">
+  <section>
     <div class="bg">
       <div id="particles"/>
       <div class="bg__text-wrapper">

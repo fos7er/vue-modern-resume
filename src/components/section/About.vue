@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="bg-[#2b2b2b] text-[#7A7A7A]">
+  <section class="bg-[#2b2b2b] text-[#7A7A7A]">
     <div class="container about pt-24 pb-16">
       <div class="md:grid grid-cols-4 items-start">
         <div class="photo flex justify-center md:justify-start">

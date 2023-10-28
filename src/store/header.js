@@ -1,4 +1,4 @@
-import {defineStore} from 'pinia'
+import { defineStore } from 'pinia'
 
 export const useHeaderStore = defineStore('header', {
   state: () => ({
@@ -39,7 +39,7 @@ export const useHeaderStore = defineStore('header', {
       },
       {
         id: 'portfolio',
-        active: true,
+        active: false,
         text: 'portfolio',
         path: '/',
         hash: '#portfolio'
@@ -53,32 +53,32 @@ export const useHeaderStore = defineStore('header', {
           {
             id: 'nested1',
             text: 'link1',
-            path:'/test'
+            path: '/test'
           },
           {
             id: 'nested2',
             text: 'link2',
-            path:'/test'
+            path: '/test'
           },
           {
             id: 'nested2',
             text: 'link3',
-            path:'/test'
+            path: '/test'
           }
         ]
       }
     ]
   }),
-  getters: {
-    doubleCount: (state) => state.count * 2
-  },
   actions: {
-    toggleMenu(i) {
+    toggleMenu (i) {
       this.menu[i].showGroup = !this.menu[i].showGroup
+    },
+    highlightMenuItem (id) {
+      this.menu.forEach(item => item.active = false)
+      const menuItem = this.menu.find(el => el.id === id)
+      if (menuItem) {
+        menuItem.active = true
+      }
     }
-  },
-  share: {
-    enable: true,
-    initialize: true
   }
 })

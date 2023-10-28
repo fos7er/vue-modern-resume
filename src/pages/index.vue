@@ -1,10 +1,12 @@
 <template>
-  <section-top/>
-  <section-about/>
-  <section-education/>
-  <section-work/>
-  <section-skills/>
-  <section-portfolio/>
+  <section-top id="home"/>
+  <section-about id="about"/>
+  <section-education id="education"/>
+  <section-work id="work"/>
+  <section-skills id="skills"/>
+  <section-portfolio id="portfolio"/>
 </template>
-<script setup lang="ts">
+
+<script setup>
+  useWaypoints(['home', 'about', 'education', 'work', 'skills', 'portfolio'])
 </script>
