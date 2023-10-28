@@ -7,7 +7,7 @@ export function useWaypoints (ids) {
 
   onMounted(() => {
     let options = {
-      rootMargin: '-300px'
+      rootMargin: '-15% 0px -70% 0px'
     }
 
     const callBack = (entries) => {
