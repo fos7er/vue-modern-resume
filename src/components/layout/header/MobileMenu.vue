@@ -2,11 +2,12 @@
   <div class="mobile-menu">
     <div class="mobile-menu__links">
       <ul class="flex flex-col whitespace-nowrap">
-        <li v-for="(item, i) in items"
-            :key="item.id"
-            class="mobile-menu__link-group p-2 border-b border-grey-light"
-            tabindex="0"
-            @click="$emit('toggle',i)"
+        <li
+          v-for="(item, i) in items"
+          :key="item.id"
+          class="mobile-menu__link-group p-2 border-b border-grey-light"
+          tabindex="0"
+          @click="$emit('toggle',i)"
         >
           <div class="mobile-menu__link-group__title hover:text-primary cursor-pointer relative">
             <NuxtLink
@@ -16,8 +17,8 @@
             >
               {{ t(item.text) }}
             </NuxtLink>
-            <span v-else>{{ t(item.text) }}</span>
-            <div v-if="item.group" class="arrow border-t border-r border-black"></div>
+            <span v-else class="transition-ease-in-out">{{ t(item.text) }}</span>
+            <div v-if="item.group" class="arrow border-t border-r border-white"/>
           </div>
           <ul
             v-if="item.group"
@@ -38,10 +39,10 @@
 </template>
 
 <script lang="ts" setup>
-  import type { Menu } from '@/composables/menu'
+  import type {Menu} from '@/types/menu'
 
   const localePath = useLocalePath()
-  const { t } = useI18n()
+  const {t} = useI18n()
 
   defineProps({
     items: {
@@ -50,6 +51,7 @@
     }
   })
 
+  defineEmits(['toggle'])
 </script>
 
 <style lang="scss" scoped>
@@ -68,7 +70,6 @@
       display: inline-block;
       width: 0.7rem;
       height: 0.7rem;
-      color: #fff;
       transform: rotate(135deg);
       cursor: pointer;
     }

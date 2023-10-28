@@ -31,36 +31,36 @@ const setActivePath = (item: MenuItem, path: string): boolean => {
 }
 
 //header supports nested groups:
-// const nestedMenu = [
-//   {
-//     id: 'item1',
-//     text: 'item1',
-//     active: false,
-//     showGroup: false,
-//     group: [
-//       {
-//         id: 'item1-nested1',
-//         text: 'item1-nested1'
-//       },
-//       {
-//         id: 'item1-nested2',
-//         text: 'item1-nested2'
-//       },
-//       {
-//         id: 'item1-nested2',
-//         text: 'item1-nested2'
-//       }
-//     ]
-//   },
-//   {
-//     id: 'item2',
-//     text: 'item2'
-//   },
-//   {
-//     id: 'item3',
-//     text: 'item3'
-//   }
-// ]
+const nestedMenu = [
+  {
+    id: 'item1',
+    text: 'item1',
+    active: false,
+    showGroup: false,
+    group: [
+      {
+        id: 'item1-nested1',
+        text: 'item1-nested1'
+      },
+      {
+        id: 'item1-nested2',
+        text: 'item1-nested2'
+      },
+      {
+        id: 'item1-nested2',
+        text: 'item1-nested2'
+      }
+    ]
+  },
+  {
+    id: 'item2',
+    text: 'item2'
+  },
+  {
+    id: 'item3',
+    text: 'item3'
+  }
+]
 
 export function useMenu() {
   const menu = reactive([

@@ -10,7 +10,7 @@
         <div class="links hidden md:block" :key="route.path">
           <ul class="flex whitespace-nowrap">
             <li
-              v-for="item in menu"
+              v-for="item in store.menu"
               :key="item.id"
               class="main-link"
               tabindex="0"
@@ -19,19 +19,19 @@
                 v-if="item.path"
                 :to="{ path:localePath(item.path), hash: item.hash }"
                 class="block main-link__text"
-                :class="{'text-accent-active': item.active}"
               >
                 {{ t(item.text) }}
               </NuxtLink>
-              <div v-else class="cursor-pointer main-link__text" :class="{'text-accent-active': item.active}">
+              <div v-else class="cursor-pointer main-link__text">
                 {{ t(item.text) }}
               </div>
               <div class="main-link__dropdown">
-                <ul v-if="item.group" class="bg-white pt-6 px-6">
-                  <li v-for="link in item.group"
-                      :key="link.id"
-                      :class="{'sub-group':link.group}"
-                      class="pb-8"
+                <ul v-if="item.group" class="pt-6 px-6">
+                  <li
+                    v-for="link in item.group"
+                    :key="link.id"
+                    :class="{'sub-group':link.group}"
+                    class="pb-8"
                   >
                     <NuxtLink v-if="link.path" :to="localePath(link.path)" class="block">
                       {{ t(link.text) }}
@@ -51,7 +51,7 @@
           </div>
         </div>
         <div class="burger inline-block md:hidden">
-          <burger
+          <element-button-burger
             ref="burger"
             :fold="showMenu"
             @burger-click="burgerClickHandler"
@@ -59,7 +59,7 @@
         </div>
       </div>
       <div class="bg-header">
-        <layout-header-mobile-menu v-show="showMenu" :items="menu" @toggle="toggleMenu">
+        <layout-header-mobile-menu v-show="showMenu" :items="store.menu" @toggle="store.toggleMenu">
           <div class="actions flex justify-between items-center py-4 font-medium">
           </div>
         </layout-header-mobile-menu>
@@ -69,19 +69,19 @@
 </template>
 
 <script setup>
-  import Burger from '~/components/element/button/Burger.vue'
+  import { useHeaderStore } from '~/store/header'
 
   const localePath = useLocalePath()
   const { t } = useI18n()
   const route = useRoute()
-  const { menu, toggleMenu } = useMenu()
+  const store = useHeaderStore()
 
   //region mobileMenu
   let showMenu = ref(false)
   const header = ref(null)
   const hideMobileMenu = () => {
     showMenu.value = false
-    menu.forEach(item => {
+    store.menu.forEach(item => {
       item.showGroup = false
     })
   }
@@ -141,12 +141,17 @@
     line-height: 2rem;
     text-transform: uppercase;
 
+    &__text {
+      transition: color .3s ease-in-out;
+    }
+
     &__dropdown {
       display: none;
+      position: absolute;
       left: -10%;
       font-size: 14px;
       line-height: 15px;
-      position: absolute;
+      background: theme('colors.header');
       border-top: 28px solid transparent;
 
       & > li:last-child {

@@ -42,10 +42,13 @@ canvas {
 
 a, a:visited {
   text-decoration: none;
-  outline: 0;
   transition: color .3s ease-in-out;
 }
 
 a:hover {
   @apply text-accent;
+}
+
+header a:hover {
+  @apply text-primary;
 }
