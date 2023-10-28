@@ -1,12 +1,13 @@
 <template>
   <element-input-select
-    v-model="locale"
+    :model-value="locale"
     :options="selectOptions"
+    @update:model-value="setLocale"
   />
 </template>
 
 <script setup>
-  const { locale, locales } = useI18n()
+  const { locale, locales, setLocale } = useI18n()
 
   const selectOptions = computed(() => {
     return locales.value.map(item => {
@@ -16,5 +17,4 @@
       }
     })
   })
-
 </script>

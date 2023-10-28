@@ -60,7 +60,10 @@ export default defineNuxtConfig({
       }
     ],
     defaultLocale: 'en',
-    detectBrowserLanguage: false
+    detectBrowserLanguage: {
+      alwaysRedirect: true,
+      fallbackLocale: 'en'
+    }
   },
   image: {
     quality: 80,

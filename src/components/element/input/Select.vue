@@ -150,7 +150,7 @@
 
       &_active {
         &:hover {
-          background-color: theme('colors.primary/80')
+          background-color: theme('colors.primary/80');
         }
       }
 
