@@ -7,7 +7,7 @@
             <layout-header-logo/>
           </NuxtLink>
         </div>
-        <div :key="route.path" class="links hidden md:block">
+        <div :key="route.path" class="links hidden lg:block">
           <ul class="flex whitespace-nowrap">
             <li
               v-for="item in store.menu"
@@ -45,12 +45,12 @@
             </li>
           </ul>
         </div>
-        <div class="actions ml-auto mr-8 md:mr-0 md:ml-0 flex items-center">
+        <div class="actions ml-auto mr-8 lg:mr-0 lg:ml-0 flex items-center">
           <div>
             <element-language-switcher/>
           </div>
         </div>
-        <div class="burger inline-block md:hidden">
+        <div class="burger inline-block lg:hidden">
           <element-button-burger
             ref="burger"
             :fold="showMenu"
