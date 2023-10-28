@@ -139,7 +139,7 @@
 
   .main-link {
     position: relative;
-    padding: 0 13px;
+    padding: 0 9px;
     line-height: 2rem;
     text-transform: uppercase;
 

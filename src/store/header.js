@@ -6,64 +6,64 @@ export const useHeaderStore = defineStore('header', {
       {
         id: 'home',
         active: false,
-        text: 'home',
+        text: 'menu.home',
         path: '/',
         hash: '#home'
       },
       {
         id: 'about',
-        text: 'about',
+        text: 'menu.about',
         path: '/',
         hash: '#about'
       },
       {
         id: 'education',
         active: false,
-        text: 'education',
+        text: 'menu.education',
         path: '/',
         hash: '#education'
       },
       {
         id: 'work',
         active: false,
-        text: 'work',
+        text: 'menu.work',
         path: '/',
         hash: '#work'
       },
       {
         id: 'skills',
         active: false,
-        text: 'skills',
+        text: 'menu.skills',
         path: '/',
         hash: '#skills'
       },
       {
         id: 'portfolio',
         active: false,
-        text: 'portfolio',
+        text: 'menu.portfolio',
         path: '/',
         hash: '#portfolio'
       },
       {
         id: 'submenu',
-        text: 'submenu',
+        text: 'menu.submenu',
         active: false,
         showGroup: false,
         group: [
           {
             id: 'nested1',
-            text: 'link1',
-            path: '/test'
+            text: 'menu.link1',
+            path: '/'
           },
           {
             id: 'nested2',
-            text: 'link2',
-            path: '/test'
+            text: 'menu.link2',
+            path: '/'
           },
           {
-            id: 'nested2',
-            text: 'link3',
-            path: '/test'
+            id: 'nested3',
+            text: 'menu.link2',
+            path: '/'
           }
         ]
       }

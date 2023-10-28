@@ -2,7 +2,7 @@
   <section class="bg-grey py-[90px]">
     <div class="container">
       <h2 class="mb-12 text-center uppercase font-medium text-[#95A3A3] tracking-wider">
-        {{ t('portfolioTitle') }}
+        {{ t('portfolio.title') }}
       </h2>
       <div class="sm:grid grid-cols-3 gap-10">
         <block-card

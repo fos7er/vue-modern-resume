@@ -1,5 +1,98 @@
 {
   "title": "Сайт портфолио Александра Куркина",
   "description": "Сайт портфолио Александра Куркина",
-  "portfolioTitle:": "check out some of my works."
+  "menu": {
+    "home": "home",
+    "about": "about",
+    "education": "education",
+    "work": "work",
+    "skills": "skills",
+    "portfolio": "portfolio",
+    "submenu": "submenu",
+    "link1": "link1",
+    "link2": "link2",
+    "link3": "link3"
+  },
+  "about": {
+    "title": "title",
+    "contactDetails": [
+      "Foster's project",
+      "(Your Street)",
+      "(Your City) (Your State), (Postal Code)",
+      "555-555-5555"
+    ]
+  },
+  "education": {
+    "title": "education",
+    "items": [
+      {
+        "name": "University?",
+        "position": "Masters in Beer tasting",
+        "period": "May 2020",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+      },
+      {
+        "name": "School #1 Maybe College?",
+        "position": "What did you study 101",
+        "period": "May 2016",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+      }
+    ]
+  },
+  "work": {
+    "title": "work",
+    "items": [
+      {
+        "companyName": "Awesome Design Studio",
+        "position": "Middle dev",
+        "period": "August 2021 - Present",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      },
+      {
+        "companyName": "Super Cool Studio",
+        "position": "Junior dev",
+        "period": "June 2020 - August 2021",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      }
+    ]
+  },
+  "skills": {
+    "title": "skills",
+    "subtitle": "Your skills description, describe what tools and technologies you know and use in your work.",
+    "items": [
+      {
+        "name": "javascript",
+        "value": 80,
+        "color": "#f7df1e"
+      },
+      {
+        "name": "vue.js",
+        "value": 80,
+        "color": "#42b883"
+      },
+      {
+        "name": "react",
+        "value": 70,
+        "color": "#61DBFB"
+      },
+      {
+        "name": "node.js",
+        "value": 55,
+        "color": "#68A063"
+      },
+      {
+        "name": "jquery",
+        "value": 60,
+        "color": "#0769AD"
+      },
+      {
+        "name": "html&css",
+        "value": 90,
+        "color": "#e34c26"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "check out some of my works."
+  }
 }

@@ -1,7 +1,20 @@
 {
   "title": "AK personal website",
   "description": "AK personal website",
+  "menu": {
+    "home": "home",
+    "about": "about",
+    "education": "education",
+    "work": "work",
+    "skills": "skills",
+    "portfolio": "portfolio",
+    "submenu": "submenu",
+    "link1": "link1",
+    "link2": "link2",
+    "link3": "link3"
+  },
   "about": {
+    "title": "title",
     "contactDetails": [
       "Foster's project",
       "(Your Street)",
@@ -79,5 +92,7 @@
       }
     ]
   },
-  "portfolioTitle": "check out some of my works."
+  "portfolio": {
+    "title": "check out some of my works."
+  }
 }
