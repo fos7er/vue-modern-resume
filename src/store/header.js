@@ -4,53 +4,68 @@ export const useHeaderStore = defineStore('header', {
   state: () => ({
     menu: [
       {
-        id: 'item1',
-        text: 'item1',
+        id: 'home',
+        active: false,
+        text: 'home',
+        path: '/',
+        hash: '#home'
+      },
+      {
+        id: 'about',
+        text: 'about',
+        path: '/',
+        hash: '#about'
+      },
+      {
+        id: 'education',
+        active: false,
+        text: 'education',
+        path: '/',
+        hash: '#education'
+      },
+      {
+        id: 'work',
+        active: false,
+        text: 'work',
+        path: '/',
+        hash: '#work'
+      },
+      {
+        id: 'skills',
+        active: false,
+        text: 'skills',
+        path: '/',
+        hash: '#skills'
+      },
+      {
+        id: 'portfolio',
+        active: true,
+        text: 'portfolio',
+        path: '/',
+        hash: '#portfolio'
+      },
+      {
+        id: 'submenu',
+        text: 'submenu',
         active: false,
         showGroup: false,
         group: [
           {
-            id: 'item1-nested1',
-            text: 'item1-nested1',
-            path: '/some'
+            id: 'nested1',
+            text: 'link1',
+            path:'/test'
           },
           {
-            id: 'item1-nested2',
-            text: 'item1-nested2',
-            path: '/some'
+            id: 'nested2',
+            text: 'link2',
+            path:'/test'
           },
           {
-            id: 'item1-nested2',
-            text: 'item1-nested2',
-            path: '/some'
+            id: 'nested2',
+            text: 'link3',
+            path:'/test'
           }
         ]
-      },
-      {
-        id: 'item2',
-        text: 'item2',
-        group: [
-          {
-            id: 'item2-nested1',
-            text: 'item2-nested1',
-            path: '/some'
-          },
-          {
-            id: 'item2-nested2',
-            text: 'item2-nested2',
-            path: '/some'
-          }
-        ]
-      },
-      {
-        id: 'item3',
-        text: 'item3',
-        path: '/some'
-      },
-      {
-        id: 'item4',
-        text: 'item4',
-        path: '/some'
       }
     ]
   }),

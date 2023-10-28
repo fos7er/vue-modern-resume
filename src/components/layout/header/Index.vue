@@ -7,18 +7,20 @@
             <layout-header-logo/>
           </NuxtLink>
         </div>
-        <div class="links hidden md:block" :key="route.path">
+        <div :key="route.path" class="links hidden md:block">
           <ul class="flex whitespace-nowrap">
             <li
               v-for="item in store.menu"
               :key="item.id"
               class="main-link"
+              :class="{'text-primary': item.active}"
               tabindex="0"
             >
               <NuxtLink
                 v-if="item.path"
                 :to="{ path:localePath(item.path), hash: item.hash }"
                 class="block main-link__text"
+
               >
                 {{ t(item.text) }}
               </NuxtLink>
@@ -45,7 +47,7 @@
         </div>
         <div class="actions ml-auto mr-8 md:mr-0 md:ml-0 flex items-center">
           <div>
-            <select name="sdf" id="sdf">
+            <select id="sdf" name="sdf">
               <option value="en">EN</option>
             </select>
           </div>
