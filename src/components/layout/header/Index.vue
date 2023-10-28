@@ -165,7 +165,7 @@
       display: block;
     }
 
-    &:focus-within > &__text, &:hover > &__text {
+    &:hover > &__text {
       color: theme('colors.primary')
     }
   }
