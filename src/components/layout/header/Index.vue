@@ -47,9 +47,7 @@
         </div>
         <div class="actions ml-auto mr-8 md:mr-0 md:ml-0 flex items-center">
           <div>
-            <select id="sdf" name="sdf">
-              <option value="en">EN</option>
-            </select>
+            <element-language-switcher/>
           </div>
         </div>
         <div class="burger inline-block md:hidden">
