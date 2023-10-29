@@ -10,7 +10,6 @@ export default defineNuxtConfig({
   app: {
     //remove this line if you're not using sub route like https://your-site.com/resume/
     baseURL: process.env.BASE_URL,
-    buildAssetsDir: '/_nuxt/',
     head: {
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon.png' },
@@ -83,6 +82,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     // https://nitro.unjs.io/config#compresspublicassets
-    compressPublicAssets: true
+    compressPublicAssets: true,
+    preset: 'github-pages'
   }
 })
