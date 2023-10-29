@@ -6,23 +6,23 @@ export default defineNuxtConfig({
       BASE_URL: process.env.BASE_URL
     }
   },
-  devtools: {enabled: true},
+  devtools: { enabled: true },
   app: {
     buildAssetsDir: '/_nuxt/',
     head: {
       link: [
-        {rel: 'icon', type: 'image/png', href: '/favicon.png'},
-        {rel: 'preconnect', href: 'https://fonts.googleapis.com'},
-        {rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous'},
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap'
         }
       ],
       meta: [
-        {name: 'robots', content: 'index, follow'},
-        {name: 'theme-color', media: '(prefers-color-scheme: light)', content: 'white'},
-        {name: 'theme-color', media: '(prefers-color-scheme: dark)', content: 'black'}
+        { name: 'robots', content: 'index, follow' },
+        { name: 'theme-color', media: '(prefers-color-scheme: light)', content: 'white' },
+        { name: 'theme-color', media: '(prefers-color-scheme: dark)', content: 'black' }
       ]
     }
   },
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
   i18n: {
     vueI18n: './i18n.config.js',
     strategy: 'prefix_except_default',
-    baseUrl: 'http://localhost:3000/' || process.env.BASE_URL,
+    baseUrl: process.env.BASE_URL,
     locales: [
       {
         code: 'en',
