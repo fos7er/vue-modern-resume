@@ -114,23 +114,23 @@
 
 <style lang="postcss" scoped>
   .app-header {
-    @apply fixed w-full bg-header text-white font-roboto select-none z-10 tracking-[2.5px]
+    @apply fixed w-full bg-header text-white font-roboto select-none z-10 tracking-[2.5px];
   }
 
   .menu {
-    @apply h-12 grid grid-cols-12 items-center px-4 xl:px-10 border-b border-header
-  }
+    @apply h-12 grid grid-cols-12 items-center px-4 xl:px-10 border-b border-header;
 
-  .menu .menu__logo {
-    @apply col-span-2
-  }
+    &__logo {
+      @apply col-span-2;
+    }
 
-  .menu .menu__links {
-    @apply col-span-8 hidden justify-center lg:flex
-  }
+    &__links {
+      @apply col-span-8 hidden justify-center lg:flex;
+    }
 
-  .menu .menu__actions {
-    @apply col-span-2 flex justify-end items-center col-start-10 lg:col-start-auto
+    &__actions {
+      @apply col-span-2 flex justify-end items-center col-start-10 lg:col-start-auto;
+    }
   }
 
   .app-header .logo > * {

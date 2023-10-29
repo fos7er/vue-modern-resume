@@ -22,7 +22,7 @@ body {
 }
 
 ::selection {
-  @apply bg-accent-light
+  @apply bg-accent-light;
 }
 
 .dark ::selection {
@@ -36,7 +36,7 @@ canvas {
 
 .container {
   &.education, &.work, &.skills {
-    @apply py-12 border-t border-gray-200
+    @apply py-12 border-t border-gray-200;
   }
 }
 
