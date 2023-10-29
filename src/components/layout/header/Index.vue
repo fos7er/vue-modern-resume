@@ -1,13 +1,13 @@
 <template>
   <header ref="header" class="app-header">
     <nav role="navigation">
-      <div class="menu h-12 grid grid-cols-12">
-        <div class="logo col-span-2">
+      <div class="menu">
+        <div class="menu__logo">
           <NuxtLink class="block" :to="{ path:localePath('/'), hash: '#home' }">
             <layout-header-logo/>
           </NuxtLink>
         </div>
-        <div :key="route.path" class="links col-span-8 hidden justify-center lg:flex">
+        <div :key="route.path" class="menu__links">
           <ul class="flex whitespace-nowrap">
             <li
               v-for="item in store.menu"
@@ -45,11 +45,9 @@
             </li>
           </ul>
         </div>
-        <div class="col-span-2 flex justify-end col-start-10 lg:col-start-auto">
-          <div class="actions flex items-center">
-            <div>
-              <element-language-switcher/>
-            </div>
+        <div class="menu__actions ">
+          <div>
+            <element-language-switcher/>
           </div>
         </div>
         <div class="burger inline-block lg:hidden">
@@ -119,8 +117,20 @@
     @apply fixed w-full bg-header text-white font-roboto select-none z-10 tracking-[2.5px]
   }
 
-  .app-header .menu {
-    @apply items-center px-4 xl:px-10 border-b border-header
+  .menu {
+    @apply h-12 grid grid-cols-12 items-center px-4 xl:px-10 border-b border-header
+  }
+
+  .menu .menu__logo {
+    @apply col-span-2
+  }
+
+  .menu .menu__links {
+    @apply col-span-8 hidden justify-center lg:flex
+  }
+
+  .menu .menu__actions {
+    @apply col-span-2 flex justify-end items-center col-start-10 lg:col-start-auto
   }
 
   .app-header .logo > * {
