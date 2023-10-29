@@ -1,13 +1,13 @@
 <template>
   <header ref="header" class="app-header">
     <nav role="navigation">
-      <div class="menu h-12">
-        <div class="logo">
+      <div class="menu h-12 grid grid-cols-12">
+        <div class="logo col-span-2">
           <NuxtLink class="block" :to="{ path:localePath('/'), hash: '#home' }">
             <layout-header-logo/>
           </NuxtLink>
         </div>
-        <div :key="route.path" class="links hidden lg:block">
+        <div :key="route.path" class="links col-span-8 hidden justify-center lg:flex">
           <ul class="flex whitespace-nowrap">
             <li
               v-for="item in store.menu"
@@ -45,9 +45,11 @@
             </li>
           </ul>
         </div>
-        <div class="actions ml-auto mr-8 lg:mr-0 lg:ml-0 flex items-center">
-          <div>
-            <element-language-switcher/>
+        <div class="col-span-2 flex justify-end col-start-10 lg:col-start-auto">
+          <div class="actions flex items-center">
+            <div>
+              <element-language-switcher/>
+            </div>
           </div>
         </div>
         <div class="burger inline-block lg:hidden">
@@ -118,7 +120,7 @@
   }
 
   .app-header .menu {
-    @apply flex justify-between items-center px-4 xl:px-10 border-b border-header
+    @apply items-center px-4 xl:px-10 border-b border-header
   }
 
   .app-header .logo > * {
