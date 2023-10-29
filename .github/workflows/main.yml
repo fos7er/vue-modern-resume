@@ -26,8 +26,5 @@ jobs:
           git init
           git add -A
           git commit -m 'deploy'
-          git push -f https://Stozen-spb:${{ secrets.GH_TOKEN }}@github.com/Stozen-spb/Stozen-spb.github.io.git master:gh-pages
+          git push -f https://fos7er.github.io:${{ secrets.GH_TOKEN }}@github.com/fos7er/vue-modern-resume.git master:gh-pages
         shell: bash
-
-
-
