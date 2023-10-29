@@ -1,0 +1,33 @@
+name: Deploy to GitHub Pages
+on:
+  workflow_dispatch:
+    branches:
+      - master
+env:
+  NODE-ENV: production
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: install deps
+        run: npm ci
+      - name: build app
+        run: npm run generate
+      - name: Deploy
+        run: |
+          cd dist
+          ln -s index.html 404.html
+          git config --global user.email "CI@stozen.com"
+          git config --global user.name "CI"
+          git init
+          git add -A
+          git commit -m 'deploy'
+          git push -f https://Stozen-spb:${{ secrets.GH_TOKEN }}@github.com/Stozen-spb/Stozen-spb.github.io.git master:gh-pages
+        shell: bash
+
+
+
