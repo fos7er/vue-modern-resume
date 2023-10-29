@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     //remove this line if you're not using sub route like https://your-site.com/resume/
-    baseURL: '/vue-modern-resume',
+    baseURL: process.env.BASE_URL,
     buildAssetsDir: '/_nuxt/',
     head: {
       link: [
