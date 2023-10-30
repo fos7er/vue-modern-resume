@@ -5,8 +5,7 @@
       <div class="bg__text-wrapper">
         <h1 class="bg__title">My name is Jonathan Black.</h1>
         <h2 class="bg__subtitle">
-          I am a web developer and I use react and vue.js to develop pages. This project is
-          a template that can be used as the home page or resume page.
+          I am a web developer and I use react and vue.js to create pages. This template project can be used as the home page or resume page.
         </h2>
       </div>
       <element-button-go-to class="go-to-top" target="#about">
@@ -122,7 +121,7 @@
 
     .go-to-top {
       position: absolute;
-      bottom: 24px;
+      bottom: calc(15vh);
       left: 0;
       right: 0;
       margin: auto;
@@ -139,6 +138,7 @@
     #particles {
       height: 70%;
     }
+
     .bg {
       margin-top: 0;
       padding: 50px 60px;
@@ -150,6 +150,10 @@
       &__subtitle {
         font-size: calc(var(--resolution) * 0.8);
         line-height: calc(var(--resolution) * 1.5);
+      }
+
+      .go-to-top {
+        bottom: 24px;
       }
     }
   }
