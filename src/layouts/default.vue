@@ -8,9 +8,7 @@
 </template>
 
 <script setup>
-  import gsap from 'gsap'
-  import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
+  const { $gsap } = useNuxtApp()
   const { locale, t } = useI18n()
 
   useHead({
@@ -24,15 +22,14 @@
   })
 
   //region animation
-  gsap.registerPlugin(ScrollTrigger)
-  const main = ref()
+  const main = ref(null)
   let ctx
 
   onMounted(() => {
-    ctx = gsap.context((self) => {
+    ctx = $gsap.context((self) => {
       let targets = self.selector('.animate.flip-in-left')
       targets.forEach(target => {
-        gsap.from(target, {
+        $gsap.from(target, {
           xPercent: -100,
           duration: 1,
           ease: 'power2.out',
@@ -46,7 +43,7 @@
 
       targets = self.selector('.animate.fade-in-left')
       targets.forEach(target => {
-        gsap.from(target, {
+        $gsap.from(target, {
           xPercent: -10,
           duration: 1,
           opacity: 0,
@@ -60,7 +57,7 @@
 
       targets = self.selector('.animate.fade-in-top')
       targets.forEach(target => {
-        gsap.from(target, {
+        $gsap.from(target, {
           yPercent: -100,
           opacity: 0,
           duration: 1.5,
