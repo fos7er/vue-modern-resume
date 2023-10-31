@@ -155,8 +155,8 @@
       }
 
       &__subtitle {
-        font-size: calc(var(--resolution) * 0.8);
-        line-height: calc(var(--resolution) * 1.5);
+        font-size: calc(var(--resolution) * 0.65);
+        line-height: calc(var(--resolution) * 1);
       }
 
       .go-to-top {
