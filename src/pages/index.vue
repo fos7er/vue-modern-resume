@@ -1,5 +1,5 @@
 <template>
-  <div ref="main">
+  <div>
     <section-top id="home"/>
     <section-about id="about"/>
     <section-education id="education"/>
@@ -10,47 +10,5 @@
 </template>
 
 <script setup>
-  import gsap from 'gsap'
-  import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
   useWaypoints(['home', 'about', 'education', 'work', 'skills', 'portfolio'])
-
-  //region animation
-  gsap.registerPlugin(ScrollTrigger)
-  const main = ref()
-  let ctx
-
-  onMounted(() => {
-    ctx = gsap.context((self) => {
-      const targets = self.selector('.animate.flip-in-left')
-      targets.forEach(target => {
-        gsap.from(target, {
-          xPercent: -100,
-          duration: 1,
-          opacity: 0,
-          scrollTrigger: {
-            trigger: target,
-            start: 'top 80%'
-          }
-        })
-      })
-      const targets2 = self.selector('.animate.fade-in-left')
-      targets2.forEach(target => {
-        gsap.from(target, {
-          xPercent: -10,
-          duration: 1,
-          opacity: 0,
-          scrollTrigger: {
-            trigger: target,
-            start: 'top 80%'
-          }
-        })
-      })
-    }, main.value)
-  })
-
-  onUnmounted(() => {
-    ctx.revert()
-  })
-  //endregion
 </script>
