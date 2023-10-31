@@ -2,15 +2,15 @@
   <div class="card bg-white">
     <lightgallery :settings="gallerySettings">
       <a
-        :href="imgSrc"
         :data-sub-html="subHtml"
+        :href="imgSrc"
         class="relative cursor-zoom-in"
       >
         <NuxtPicture
+          :alt="title"
+          :src="nuxtPictureSrc"
           class="card__img"
           format="avif,webp"
-          :src="nuxtPictureSrc"
-          :alt="title"
           sizes="100vw sm:350px"
         />
         <div

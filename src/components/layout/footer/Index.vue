@@ -13,7 +13,7 @@
         <li>
           <span class="px-2.5">•</span>
           <span class="mr-2">Design by</span>
-          <a title="Styleshout" href="https://www.styleshout.com/" target="_blank">Styleshout</a>
+          <a href="https://www.styleshout.com/" target="_blank" title="Styleshout">Styleshout</a>
         </li>
       </ul>
     </div>

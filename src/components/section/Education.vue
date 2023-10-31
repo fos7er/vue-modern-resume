@@ -7,10 +7,10 @@
           <block-bio
             v-for="item in tm('education.items')"
             :key="rt(item.name)"
-            :title="rt(item.name)"
-            :subtitle="rt(item.position)"
-            :period="rt(item.period)"
             :description="rt(item.description)"
+            :period="rt(item.period)"
+            :subtitle="rt(item.position)"
+            :title="rt(item.name)"
           />
         </div>
       </div>

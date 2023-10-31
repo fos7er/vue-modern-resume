@@ -4,7 +4,7 @@
       <slot/>
     </div>
     <div class="bg-dark max-w-[600px] h-[42px]">
-      <div class="h-full" :style="`background-color:${color};width:${value}%`"></div>
+      <div :style="`background-color:${color};width:${value}%`" class="h-full"></div>
     </div>
   </li>
 </template>

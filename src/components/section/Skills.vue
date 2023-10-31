@@ -9,8 +9,8 @@
             <element-skill
               v-for="item in tm('skills.items')"
               :key="rt(item.name)"
-              :value="rt(item.value)"
               :color="rt(item.color)"
+              :value="rt(item.value)"
             >
               {{ rt(item.name) }}
             </element-skill>

@@ -1,6 +1,6 @@
 <template>
   <div ref="main">
-    <NuxtLoadingIndicator color="#dd6a00" :duration="1000"/>
+    <NuxtLoadingIndicator :duration="1000" color="#dd6a00"/>
     <layout-header/>
     <slot/>
     <layout-footer/>

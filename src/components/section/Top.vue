@@ -3,8 +3,8 @@
     <div class="bg">
       <div id="particles"/>
       <div
-        class="bg__text-wrapper"
         :class="{'hidden': !isReady}"
+        class="bg__text-wrapper"
       >
         <h1 class="bg__title animate fade-in-top">{{ t('top.title') }}</h1>
         <h2 class="bg__subtitle animate fade-in-top">

@@ -3,7 +3,7 @@
     <nav role="navigation">
       <div class="menu">
         <div class="menu__logo">
-          <NuxtLink class="block" :to="{ path:localePath('/'), hash: '#home' }">
+          <NuxtLink :to="{ path:localePath('/'), hash: '#home' }" class="block">
             <layout-header-logo/>
           </NuxtLink>
         </div>
@@ -12,8 +12,8 @@
             <li
               v-for="item in store.menu"
               :key="item.id"
-              class="main-link"
               :class="{'text-primary': item.active}"
+              class="main-link"
               tabindex="0"
             >
               <NuxtLink

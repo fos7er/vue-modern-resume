@@ -7,10 +7,10 @@
           <block-bio
             v-for="item in tm('work.items')"
             :key="rt(item.companyName)"
-            :title="rt(item.companyName)"
-            :subtitle="rt(item.position)"
-            :period="rt(item.period)"
             :description="rt(item.description)"
+            :period="rt(item.period)"
+            :subtitle="rt(item.position)"
+            :title="rt(item.companyName)"
           />
         </div>
       </div>
