@@ -1,6 +1,7 @@
 {
-  "title": "Сайт портфолио Иван Иванов",
-  "description": "Сайт портфолио Иван Иванов",
+  "title": "Сайт-портфолио Иван Иванов",
+  "description": "Сайт-портфолио Иван Иванов",
+  "name": "Иван Иванов",
   "menu": {
     "home": "в начало",
     "about": "обо мне",
@@ -20,6 +21,10 @@
   "about": {
     "title": "Обо мне",
     "subtitle": "Используйте этот раздел биографии как способ описать себя и рассказать, чем вы занимаетесь, какие технологии вам нравится использовать или с которыми вы чувствуете себя наиболее комфортно, описать свою личность или что-то еще, что вы хотите добавить.",
+    "downloadBtnText": "Скачать резюме",
+    "btn2Link": "https://github.com",
+    "btn2Text": "Мой GitHub",
+    "contactDetailsTitle": "Контакты",
     "contactDetails": [
       "Foster's project",
       "(Ваша улица)",
@@ -99,5 +104,25 @@
   },
   "portfolio": {
     "title": "примеры работ."
+  },
+  "footer": {
+    "socialLinks": [
+      {
+        "href": "https://facebook.com",
+        "class": "i-fa-brands-facebook"
+      },
+      {
+        "href": "https://twitter.com",
+        "class": "i-fa-brands-twitter"
+      },
+      {
+        "href": "https://web.telegram.org/k/",
+        "class": "i-fa-brands-telegram"
+      },
+      {
+        "href": "https://github.com",
+        "class": "i-fa-brands-github"
+      }
+    ]
   }
 }

@@ -10,23 +10,35 @@
           <p class="mb-6">
             {{ t('about.subtitle') }}
           </p>
-          <div class="md:grid grid-cols-2 gap-2">
+          <h3 class="mb-3 text-lg text-white font-bold">{{ t('about.contactDetailsTitle')}}</h3>
+          <div class="md:grid grid-cols-2 gap-6">
             <div class="mb-6">
-              <h3 class="mb-3 text-lg text-white font-bold">Contact Details</h3>
               <div class="address">
                 <div v-for="item in tm('about.contactDetails')">{{ item }}</div>
                 <a :href="`mailto:${email}`">{{ email }}</a>
               </div>
             </div>
-            <div>
-              <a
-                :href="resume"
-                class="inline-flex items-center px-5 py-3 bg-[#444] text-white font-bold cursor-pointer hover:bg-white hover:text-black transition-ease-in-out"
-                target="_blank"
-              >
-                <span class="i-mdi-download mr-2"/>
-                <span>Download Resume</span>
-              </a>
+            <div class="btns-wrapper flex flex-col items-end gap-y-6">
+              <div>
+                <a
+                  :href="t('about.btn2Link')"
+                  class="flex w-[250px] items-center px-5 py-3 bg-[#444] text-white font-bold cursor-pointer hover:bg-white hover:text-black transition-ease-in-out"
+                  target="_blank"
+                >
+                  <span class="i-fa-brands-github mr-2"/>
+                  <span>{{ t('about.btn2Text') }}</span>
+                </a>
+              </div>
+              <div>
+                <a
+                  :href="resume"
+                  class="flex w-[250px] items-center px-5 py-3 bg-[#444] text-white font-bold cursor-pointer hover:bg-white hover:text-black transition-ease-in-out"
+                  target="_blank"
+                >
+                  <span class="i-mdi-download mr-2"/>
+                  <span>{{ t('about.downloadBtnText')}}</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

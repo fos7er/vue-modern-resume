@@ -1,6 +1,7 @@
 {
   "title": "AK personal website",
   "description": "AK personal website",
+  "name": "Jonathan Black",
   "menu": {
     "home": "home",
     "about": "about",
@@ -20,6 +21,10 @@
   "about": {
     "title": "About me",
     "subtitle": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in",
+    "downloadBtnText": "Download Resume",
+    "btn2Link": "https://github.com",
+    "btn2Text": "My GitHub",
+    "contactDetailsTitle": "Contact Details",
     "contactDetails": [
       "Foster's project",
       "(Your Street)",
@@ -99,5 +104,25 @@
   },
   "portfolio": {
     "title": "check out some of my works."
+  },
+  "footer": {
+    "socialLinks": [
+      {
+        "href": "https://facebook.com",
+        "class": "i-fa-brands-facebook"
+      },
+      {
+        "href": "https://twitter.com",
+        "class": "i-fa-brands-twitter"
+      },
+      {
+        "href": "https://web.telegram.org/k/",
+        "class": "i-fa-brands-telegram"
+      },
+      {
+        "href": "https://github.com",
+        "class": "i-fa-brands-github"
+      }
+    ]
   }
 }
