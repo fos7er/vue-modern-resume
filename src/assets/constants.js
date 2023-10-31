@@ -1,1 +1,1 @@
-export const email = 'youremailhere@gmail.com'
+export const email = 'yourmail@gmail.com'
