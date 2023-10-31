@@ -61,7 +61,7 @@
       <div class="bg-header">
         <layout-header-mobile-menu v-show="showMenu" :items="store.menu" @toggle="store.toggleMenu">
           <div class="actions flex justify-between items-center px-2 py-4">
-            <a :href="`mailto:${email}`">{{ email }}</a>
+            <a :href="`mailto:${email}`" class="lowercase">{{ email }}</a>
             <element-language-switcher/>
           </div>
         </layout-header-mobile-menu>
