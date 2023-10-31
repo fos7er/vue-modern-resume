@@ -2,7 +2,10 @@
   <section>
     <div class="bg">
       <div id="particles"/>
-      <div class="bg__text-wrapper">
+      <div
+        class="bg__text-wrapper"
+        :class="{'hidden': !isReady}"
+      >
         <h1 class="bg__title animate fade-in-top">{{ t('top.title') }}</h1>
         <h2 class="bg__subtitle animate fade-in-top">
           {{ t('top.subtitle') }}
@@ -21,6 +24,7 @@
   })
 
   const { t } = useI18n()
+  const isReady = ref(false)
 
   const options = {
     fps_limit: 60,
@@ -72,6 +76,7 @@
   }
 
   onMounted(() => {
+    isReady.value = true
     tsParticles.load('particles', options)
   })
 
