@@ -14,6 +14,7 @@
               v-if="item.path"
               :to="{path:localePath(item.path), hash: item.hash}"
               class="block"
+              @click="$emit('linkClick')"
             >
               {{ t(item.text) }}
             </NuxtLink>
@@ -26,7 +27,7 @@
             class="my-4 mx-2 px-5 border-l border-gray-light font-medium"
           >
             <li v-for="link in item.group" :key="link.id" class="mb-5">
-              <NuxtLink v-if="link.path" :to="localePath(link.path)" class="block">
+              <NuxtLink v-if="link.path" :to="localePath(link.path)" class="block" @click="$emit('linkClick')">
                 {{ t(link.text) }}
               </NuxtLink>
             </li>
@@ -51,7 +52,7 @@
     }
   })
 
-  defineEmits(['toggle'])
+  defineEmits(['toggle', 'linkClick'])
 </script>
 
 <style lang="scss" scoped>

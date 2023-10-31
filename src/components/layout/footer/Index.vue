@@ -9,7 +9,7 @@
         </li>
       </ul>
       <ul class="copyright flex justify-center">
-        <li>{{ new Date().getFullYear() }} {{t('name')}}</li>
+        <li>{{ new Date().getFullYear() }} {{ t('name') }}</li>
         <li>
           <span class="px-2.5">•</span>
           <span class="mr-2">Design by</span>
@@ -24,6 +24,7 @@
 </template>
 
 <script setup>
+  const { t } = useI18n()
   const socialLinks = [
     {
       href: 'https://facebook.com',
