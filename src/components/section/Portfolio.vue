@@ -1,6 +1,6 @@
 <template>
   <section class="bg-grey py-[90px]">
-    <div class="container">
+    <div class="container animate fade-in-left">
       <h2 class="mb-12 text-center uppercase font-medium text-[#95A3A3] tracking-wider">
         {{ t('portfolio.title') }}
       </h2>

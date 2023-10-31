@@ -34,6 +34,18 @@
           }
         })
       })
+      const targets2 = self.selector('.animate.fade-in-left')
+      targets2.forEach(target => {
+        gsap.from(target, {
+          xPercent: -10,
+          duration: 1,
+          opacity: 0,
+          scrollTrigger: {
+            trigger: target,
+            start: 'top 80%'
+          }
+        })
+      })
     }, main.value)
   })
 
