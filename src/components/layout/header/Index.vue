@@ -71,8 +71,8 @@
 </template>
 
 <script setup>
-  import { useHeaderStore } from '~/store/header'
   import { email } from '@/assets/constants'
+  import { useHeaderStore } from '~/store/header'
 
   const localePath = useLocalePath()
   const { t } = useI18n()

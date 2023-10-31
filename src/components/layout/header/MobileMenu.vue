@@ -39,10 +39,10 @@
 </template>
 
 <script lang="ts" setup>
-  import type {Menu} from '@/types/menu'
+  import type { Menu } from '@/types/menu'
 
   const localePath = useLocalePath()
-  const {t} = useI18n()
+  const { t } = useI18n()
 
   defineProps({
     items: {

@@ -36,8 +36,8 @@
 </template>
 
 <script setup>
-  import { email } from '@/assets/constants'
   import resume from '@/assets/docs/resume.pdf'
+  import { email } from '@/assets/constants'
 
   const { t, tm } = useI18n()
 </script>
