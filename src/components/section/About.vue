@@ -18,7 +18,7 @@
                 <a :href="`mailto:${email}`">{{ email }}</a>
               </div>
             </div>
-            <div class="btns-wrapper flex flex-col items-end gap-y-6">
+            <div class="btns-wrapper flex flex-col lg:items-end gap-y-6">
               <div>
                 <a
                   :href="t('about.btn2Link')"
