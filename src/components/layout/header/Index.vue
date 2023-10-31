@@ -45,8 +45,8 @@
             </li>
           </ul>
         </div>
-        <div class="menu__actions ">
-          <div>
+        <div class="menu__actions">
+          <div class="pr-3">
             <element-language-switcher/>
           </div>
         </div>
