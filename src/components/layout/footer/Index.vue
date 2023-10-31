@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-black py-12 text-white text-[14px] text-center relative">
-    <div class="container flex flex-col justify-between animate fade-in-bottom">
+    <div class="container flex flex-col justify-between animate fade-in-top">
       <ul class="social-links flex justify-center gap-9 text-[32px] mt-5 mb-8">
         <li v-for="link in socialLinks" :key="link.href">
           <a :href="link.href" target="_blank">

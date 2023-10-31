@@ -58,7 +58,7 @@
         })
       })
 
-      targets = self.selector('.animate.fade-in-bottom')
+      targets = self.selector('.animate.fade-in-top')
       targets.forEach(target => {
         gsap.from(target, {
           yPercent: -100,
