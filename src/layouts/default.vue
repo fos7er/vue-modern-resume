@@ -63,7 +63,7 @@
         gsap.from(target, {
           yPercent: -100,
           opacity: 0,
-          duration: 1,
+          duration: 1.5,
           ease: 'power2.out',
           scrollTrigger: {
             trigger: target,

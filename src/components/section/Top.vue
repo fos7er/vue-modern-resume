@@ -3,8 +3,8 @@
     <div class="bg">
       <div id="particles"/>
       <div class="bg__text-wrapper">
-        <h1 class="bg__title">My name is Jonathan Black.</h1>
-        <h2 class="bg__subtitle">
+        <h1 class="bg__title animate fade-in-top">My name is Jonathan Black.</h1>
+        <h2 class="bg__subtitle animate fade-in-top">
           I am a web developer and I use react and vue.js to create pages. This template project can be used as the home page or resume page.
         </h2>
       </div>
