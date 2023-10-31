@@ -6,9 +6,9 @@
           <img class="mb-6 rounded-full w-[180px]" src="@/assets/img/myPhoto.jpeg" alt="myPhoto">
         </div>
         <div class="col-span-3">
-          <h3 class="mb-3 text-lg text-white font-bold">{{t('about.title')}}</h3>
+          <h3 class="mb-3 text-lg text-white font-bold">{{ t('about.title') }}</h3>
           <p class="mb-6">
-            {{t('about.subtitle')}}
+            {{ t('about.subtitle') }}
           </p>
           <div class="md:grid grid-cols-2 gap-2">
             <div class="mb-6">
@@ -36,7 +36,7 @@
 </template>
 
 <script setup>
-  import { email} from '@/assets/constants'
+  import { email } from '@/assets/constants'
   import resume from '@/assets/docs/resume.pdf'
 
   const { t, tm } = useI18n()
