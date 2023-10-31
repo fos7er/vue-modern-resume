@@ -67,7 +67,7 @@
           ease: 'power2.out',
           scrollTrigger: {
             trigger: target,
-            start: 'top 70%'
+            start: 'top 90%'
           }
         })
       })
