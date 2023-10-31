@@ -6,11 +6,9 @@
           <img class="mb-6 rounded-full w-[180px]" src="@/assets/img/myPhoto.jpeg" alt="myPhoto">
         </div>
         <div class="col-span-3">
-          <h3 class="mb-3 text-lg text-white font-bold">About Me</h3>
+          <h3 class="mb-3 text-lg text-white font-bold">{{t('about.title')}}</h3>
           <p class="mb-6">
-            Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-            to
-            use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in
+            {{t('about.subtitle')}}
           </p>
           <div class="md:grid grid-cols-2 gap-2">
             <div class="mb-6">

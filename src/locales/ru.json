@@ -13,8 +13,13 @@
     "link2": "link2",
     "link3": "link3"
   },
+  "top": {
+    "title": "My name is Jonathan Black.",
+    "subtitle": "I am a web developer and I use react and vue.js to create pages. This template project can be used as the home page or resume page."
+  },
   "about": {
     "title": "title",
+    "subtitle": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in",
     "contactDetails": [
       "Foster's project",
       "(Your Street)",

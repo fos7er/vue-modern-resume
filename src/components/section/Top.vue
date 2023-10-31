@@ -3,9 +3,9 @@
     <div class="bg">
       <div id="particles"/>
       <div class="bg__text-wrapper">
-        <h1 class="bg__title animate fade-in-top">My name is Jonathan Black.</h1>
+        <h1 class="bg__title animate fade-in-top">{{ t('top.title') }}</h1>
         <h2 class="bg__subtitle animate fade-in-top">
-          I am a web developer and I use react and vue.js to create pages. This template project can be used as the home page or resume page.
+          {{ t('top.subtitle') }}
         </h2>
       </div>
       <element-button-go-to class="go-to-top" target="#about">
@@ -19,6 +19,8 @@
   useHead({
     script: [{ src: 'https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js' }]
   })
+
+  const { t } = useI18n()
 
   const options = {
     fps_limit: 60,
@@ -97,7 +99,7 @@
     text-align: center;
     font-family: 'Roboto', 'sans-serif';
     font-weight: bold;
-    background:#000 url('@/assets/img/desert.webp') no-repeat top;
+    background: #000 url('@/assets/img/desert.webp') no-repeat top;
     background-size: cover;
     z-index: 1;
 
