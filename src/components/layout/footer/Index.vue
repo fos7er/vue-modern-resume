@@ -2,9 +2,9 @@
   <footer class="bg-black py-12 text-white text-[14px] text-center relative">
     <div class="container flex flex-col justify-between animate fade-in-top">
       <ul class="social-links flex justify-center gap-9 text-[32px] mt-5 mb-8">
-        <li v-for="link in tm('footer.socialLinks')" :key="rt(link.href)">
-          <a :href="rt(link.href)" target="_blank">
-            <span :class="rt(link.class)"/>
+        <li v-for="link in socialLinks" :key="link.href">
+          <a :href="link.href" target="_blank">
+            <span :class="link.class"/>
           </a>
         </li>
       </ul>
@@ -24,8 +24,24 @@
 </template>
 
 <script setup>
-  const { t, tm, rt } = useI18n()
-
+  const socialLinks = [
+    {
+      href: 'https://facebook.com',
+      class: 'i-fa-brands-facebook'
+    },
+    {
+      href: 'https://twitter.com',
+      class: 'i-fa-brands-twitter'
+    },
+    {
+      href: 'https://web.telegram.org/k/',
+      class: 'i-fa-brands-telegram'
+    },
+    {
+      href: 'https://github.com',
+      class: 'i-fa-brands-github'
+    }
+  ]
 </script>
 
 <style lang="scss" scoped>

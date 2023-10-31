@@ -104,25 +104,5 @@
   },
   "portfolio": {
     "title": "check out some of my works."
-  },
-  "footer": {
-    "socialLinks": [
-      {
-        "href": "https://facebook.com",
-        "class": "i-fa-brands-facebook"
-      },
-      {
-        "href": "https://twitter.com",
-        "class": "i-fa-brands-twitter"
-      },
-      {
-        "href": "https://web.telegram.org/k/",
-        "class": "i-fa-brands-telegram"
-      },
-      {
-        "href": "https://github.com",
-        "class": "i-fa-brands-github"
-      }
-    ]
   }
 }
