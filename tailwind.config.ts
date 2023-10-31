@@ -24,7 +24,7 @@ export default <Config>{
     container: {
       center: true,
       padding: {
-        DEFAULT: '2rem',
+        DEFAULT: '1.5rem',
         'md': '2rem',
         'lg': '3rem',
         'xl': '130px'
