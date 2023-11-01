@@ -12,7 +12,7 @@ Vue 3 nuxt 3 modern resume template. A classic design with modern approach.
 - [X] [Nuxt i18n](https://i18n.nuxtjs.org/)
 - [X] [Tailwind CSS v3](https://tailwindcss.com/)
 - [X] [@egoist/tailwindcss-icons](https://github.com/egoist/tailwindcss-icons/)
-- [X] [lightgallery](https://www.lightgalleryjs.com/)
+- [X] [Lightgallery](https://www.lightgalleryjs.com/)
 - [X] [GSAP animations](https://gsap.com/)
 - [X] [Sitemap](https://nuxt.com/modules/simple-sitemap/)
 - [X] Ready to deploy to github pages
