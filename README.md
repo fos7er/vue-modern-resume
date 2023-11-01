@@ -1,75 +1,42 @@
-# Nuxt 3 Minimal Starter
+# Vue 3 modern resume
+Vue 3 nuxt 3 modern resume template. A classic design with modern approach.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[![Alpine](./src/assets/img/banner.png)](https://fos7er.github.io/vue-modern-resume/)
 
-## Setup
+- [Demo](https://fos7er.github.io/vue-modern-resume/)
 
-Make sure to install the dependencies:
+## Features
 
-```bash
-# npm
-npm install
+- [X] [Nuxt 3](https://nuxt.com/)
+- [X] [State & Store Management (Pinia)](https://pinia.vuejs.org/)
+- [X] [Nuxt i18n](https://i18n.nuxtjs.org/)
+- [X] [Tailwind CSS v3](https://tailwindcss.com/)
+- [X] [@egoist/tailwindcss-icons](https://github.com/egoist/tailwindcss-icons/)
+- [X] [lightgallery](https://www.lightgalleryjs.com/)
+- [X] [GSAP animations](https://gsap.com/)
+- [X] [Sitemap](https://nuxt.com/modules/simple-sitemap/)
+- [X] Ready to deploy to github pages
 
-# pnpm
-pnpm install
 
-# yarn
-yarn install
+## Getting Started
 
-# bun
-bun install
-```
+### Installation
 
-## Development Server
+- clone this repository
+  ```bash
+  git clone https://github.com/fos7er/vue-modern-resume
+  ```
+- install dependencies
+  ```bash
+  npm install
+  ```
+- run development server
+  ```bash
+  npm run dev
+  ```
+#### Production
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- run build
+  ```bash
+  npm run generate
+  ```
