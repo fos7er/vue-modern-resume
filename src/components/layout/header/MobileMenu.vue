@@ -9,7 +9,7 @@
           tabindex="0"
           @click="$emit('toggle',i)"
         >
-          <div class="mobile-menu__link-group__title hover:text-primary cursor-pointer relative">
+          <div class="mobile-menu__link-group__title px-2 hover:text-primary cursor-pointer relative">
             <NuxtLink
               v-if="item.path"
               :to="{path:localePath(item.path), hash: item.hash}"
