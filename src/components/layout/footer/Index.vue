@@ -8,7 +8,7 @@
           </a>
         </li>
       </ul>
-      <ul class="copyright flex justify-center">
+      <ul class="copyright flex justify-center flex-wrap">
         <li>{{ new Date().getFullYear() }} {{ t('name') }}</li>
         <li>
           <span class="px-2.5">•</span>
