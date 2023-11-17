@@ -115,7 +115,7 @@
     &__title {
       margin-top: -50px;
       margin-bottom: 0.7rem;
-      font-size: calc(var(--resolution) * 2);
+      font-size: calc(var(--resolution) * 1.8);
       line-height: calc(var(--resolution) * 2.2);
       text-shadow: 0 0 15px #9f4a33;
     }
