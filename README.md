@@ -15,7 +15,7 @@ Vue 3 nuxt 3 modern resume template. A classic design with modern approach.
 - [X] [Lightgallery](https://www.lightgalleryjs.com/)
 - [X] [GSAP animations](https://gsap.com/)
 - [X] [tsparticles](https://particles.js.org/)
-- [X] [Sitemap](https://nuxt.com/modules/simple-sitemap/)
+- [X] [Sitemap](https://nuxtseo.com/sitemap/getting-started/installation)
 - [X] Ready to deploy to github pages
 
 
