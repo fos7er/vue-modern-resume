@@ -44,7 +44,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxt/image',
     '@vueuse/nuxt',
-    'nuxt-simple-sitemap'
+    '@nuxtjs/sitemap'
   ],
   i18n: {
     vueI18n: './i18n.config.js',

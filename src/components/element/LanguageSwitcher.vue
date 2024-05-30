@@ -12,8 +12,8 @@
   const selectOptions = computed(() => {
     return locales.value.map(item => {
       return {
-        label: item.toUpperCase(),
-        value: item
+        label: item.code.toUpperCase(),
+        value: item.code
       }
     })
   })
